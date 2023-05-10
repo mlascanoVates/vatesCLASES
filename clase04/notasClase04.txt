@@ -1,0 +1,43 @@
+ArrayList
+for
+foreach
+
+Clases envoltorio
+Integer y=45;
+conceptualmente esta mal
+
+Integer y = new Integer(45);
+
+y.intValue();
+
+VER EN LOS APUNTES DIFERENCIA ENTRE COMPOSICIÓN Y AGREGACIÓN
+
+
+
+del mismo modelo del archivo PERSONAS y CP
+Crear una clase contenedor de PERSONAS: ej plantel
+
+resolver con composición y colección
+
+La clase un método por cada uno de los reportes que detalla la tarea.
+Ver si hay datos que se repiten.
+Que datos recibe, que datos retorna.
+ver qué métodos devuelve PERSONA
+y se pueden reutilizar métodos
+*El ultimo es el más dificil
+que retorne una lista o un objeto plantel puede ser.
+
+
+CODIGO POSTAL
+*
+*Se podría crear 3 objetos x ejemplo, uno x cada provincia.
+*
+*Puede haber una clase ejemplo PAIS, que tenga las 3 provincias.
+*o Crear clase correo que contenga las 3 provincias, (va a haber diferentes variantes)
+
+
+LEER ARTÍCULO
+https://cheatography.com/diegojserrano/cheat-sheets/composicion-en-java/
+
+NOTAS DE CLASE
+https://xmind.app/m/2zVDjf/
