@@ -1,7 +1,7 @@
 public class Administrativo extends Empleado{
 
     private boolean presentismo;
-    private final double incentivo=0.15;
+    private final double incentivo=1.15;
 
     public Administrativo(String nombre, double sueldo) {
         super(nombre, sueldo);
@@ -27,10 +27,11 @@ public class Administrativo extends Empleado{
 
     @Override
     public double getSueldoDelMes(){
+        double sueldoDelMes=0;
         if (presentismo){
-            sueldo+=sueldo *incentivo;
+            sueldoDelMes =sueldo *incentivo;
         }
-        return sueldo;
+        return sueldoDelMes;
     }
 
 
