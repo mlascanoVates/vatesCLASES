@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class ListaEmpleados {
 
     protected ArrayList<Empleado> listaEmpleados;
+    protected double sueldoMenor;
     int sueldoTotalObrero, sueldoTotalAdm, sueldoTotalVendedor;
 
     private int admConPresentismo;
@@ -29,6 +30,7 @@ public class ListaEmpleados {
     public ListaEmpleados() {
         listaEmpleados=new ArrayList<>();
         admConPresentismo=0;
+        sueldoMenor=0;
     }
 
     public void addEmpleado(Empleado e){
@@ -136,6 +138,22 @@ public class ListaEmpleados {
         return i;
     }
 */
+
+    public Empleado cobraMenos(){
+        Empleado emp=null;
+        //ver que no sale
+        for(Empleado e: listaEmpleados){
+            System.out.println("Entra");
+            if(e.getSueldoDelMes()<sueldoMenor){
+                sueldoMenor= e.getSueldoDelMes();
+                if(e instanceof Empleado){
+                    emp =e;
+                }
+                System.out.println("Entra");
+            }
+        }
+        return emp;
+    }
 
 
 }

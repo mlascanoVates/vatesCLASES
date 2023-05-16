@@ -116,6 +116,9 @@ public class Main {
 
         //TOTAL DE SUELDOS A PAGAR POR CADA TIPO DE EMPLEADO
         lista1.totalSueldoXtipo();
+        //cobra menos
+        System.out.println(lista1.cobraMenos());
+
 
 
     }

@@ -16,3 +16,10 @@ la ultima columna cambia para cada tiPO
 Usar la misma clase Conjunto Empleados y agregar info
 
 https://xmind.app/m/te7XjH
+
+
+1 Obrero
+2 Administrativo
+3 Vendedor
+
+tipoEmpleado, Legajo, Nombre, Sueldo, depende de tipo
