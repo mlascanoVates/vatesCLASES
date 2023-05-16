@@ -1,5 +1,8 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class ConjuntoPersonas {
     private Persona cadaPersona;
@@ -43,34 +46,23 @@ public class ConjuntoPersonas {
     }
 
     public ConjuntoPersonas(List<Persona> listaPersonas) {
-        this.listaPersonas = new ArrayList<>();
         this.listaPersonas =listaPersonas;
     }
 
 
-    //capaz no es necesario
-    //total edades
-    public double totalEdades(List<Persona> listaPersonas){
-        double sumar=0;
-        for(int i=0; i<listaPersonas.size(); i++){
-            sumar=  listaPersonas.get(i).getEdad();
-        }
-        return sumar;
-    }
-
-
-
-
     //Edad promedio de las personas
     public double promedioEdades(){
-
+        double promedio=-1;
         double sumar=0;
         for(int i=0; i<this.listaPersonas.size(); i++){
             sumar += this.listaPersonas.get(i).getEdad();
         }
 
-        //envolver por si lista es vacía
-        double promedio= sumar/ listaPersonas.size();
+        if(listaPersonas.size()!=0){
+            promedio= sumar/ listaPersonas.size();
+            return promedio;
+        }
+        else System.out.println("No se pudo calcular promedio de edades, lista vacía");
         return promedio;
     }
 
@@ -85,8 +77,8 @@ public class ConjuntoPersonas {
         return cantidad;
     }
 
+    //PERSONA MAYOR EDAD
     public Persona calcularMayor(){
-
         Persona personaMayor=null;
 
         for(int i=0; i<this.listaPersonas.size(); i++){
@@ -97,8 +89,9 @@ public class ConjuntoPersonas {
         return personaMayor;
     }
 
-    public Persona calcularMenor(){
 
+    //PERSONA MENOR EDAD
+    public Persona calcularMenor(){
         Persona personaMenor=null;
 
         for(int i=0; i<this.listaPersonas.size(); i++){
@@ -110,29 +103,38 @@ public class ConjuntoPersonas {
     }
 
 
-
     //Buscar lista de personas que coincidan en apellido
-    public List<Persona>  listaPorApellido(String apellido){
-        List<Persona>  listaPorApellido = null;
+    public ArrayList<Persona>  listaPorApellido(String apellido){
+        ArrayList<Persona>  listaPorApellido = new ArrayList<>();
         for(Persona i: this.listaPersonas){
-            if(i.getApellido()==apellido) {
-                System.out.println("Entra" + i);
-                listaPorApellido.add(i); ;
+            if(i.getApellido().equals(apellido)) {
+               listaPorApellido.add(i);
             }
-
         }
         return listaPorApellido;
     }
 
-
-    @Override
+     @Override
     public String toString() {
+
         return "ConjuntoPersonas{" +
                 "listaPersonas=" + getListaPersonas() +
                 '}';
     }
 
-    public int tamanioConjunto(){
-        return this.listaPersonas.size();
+    public ConjuntoPersonas crearConjunto(Scanner sc){
+
+        ConjuntoPersonas conjunto=new ConjuntoPersonas();
+        while(sc.hasNext()){
+            int documento= sc.nextInt();
+            String nombre= sc.next();
+            String apellido= sc.next();
+            int edad= sc.nextInt();
+
+            Persona Persona= new Persona(documento, nombre, apellido, edad);
+            conjunto.agregarPersona(Persona);
+        }
+        return conjunto;
     }
+
 }

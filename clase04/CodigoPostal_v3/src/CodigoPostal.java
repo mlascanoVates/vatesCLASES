@@ -1,7 +1,13 @@
 public class CodigoPostal {
 
-    String provincia, localidad;
-    int codigo;
+    private String provincia, localidad;
+    private int codigo;
+
+    public CodigoPostal(String provincia, int codigo, String localidad) {
+        this.provincia = provincia;
+        this.localidad = localidad;
+        this.codigo = codigo;
+    }
 
     public String getProvincia() {
         return provincia;
@@ -27,15 +33,12 @@ public class CodigoPostal {
         this.codigo = codigo;
     }
 
-    public CodigoPostal(String provincia, int codigo, String localidad) {
-        this.provincia = provincia;
-        this.localidad = localidad;
-        this.codigo = codigo;
-    }
+
 
     @Override
     public String toString() {
-        return  "Codigo:" + codigo +
+        return   "\n" +
+                "Codigo:" + codigo +
                 ", Provincia:" + provincia +
                 ", Localidad:" + localidad;
     }

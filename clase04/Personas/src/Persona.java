@@ -1,9 +1,8 @@
+import org.w3c.dom.ls.LSOutput;
 
 public class Persona {
 
     private int documento, edad;
-
-
 
     private String nombre, apellido;
 
@@ -50,12 +49,14 @@ public class Persona {
         this.apellido = apellido;
     }
 
+
     @Override
     public String toString() {
-        return  "nombre:" + nombre  +
+        return  "\n" +
+                "nombre:" + nombre  +
                 ", apellido:" + apellido+
                 ", documento:" + documento +
-                ", edad:" + edad;
+                ", edad:" + edad ;
     }
 
 

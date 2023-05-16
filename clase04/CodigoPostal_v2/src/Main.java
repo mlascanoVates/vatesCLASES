@@ -17,6 +17,9 @@ public class Main {
         ArrayList<CodigoPostal> provCatamarca= new ArrayList<>();
         ArrayList<CodigoPostal> provCordoba= new ArrayList<>();
         Provincia nuevaProvinciaCordoba=new Provincia("X");
+        Provincia cba=new Provincia("X");
+        Provincia cata=new Provincia("K");
+        Provincia cha=new Provincia("H");
         ArrayList<CodigoPostal> provChaco= new ArrayList<>();
         int cantCatamarca=0, cantCordoba=0, cantChaco=0;
 
@@ -34,14 +37,16 @@ public class Main {
             }
 
             switch (provincia){
-                case "K":provCatamarca.add(cp);
+                case "K"://provCatamarca.add(cp);
                     cantCatamarca++;
+                    cata.agregarCodigoLocalidad(cp);
                     break;
-                case "H": provChaco.add(cp);
+                case "H": //provChaco.add(cp);
                     cantChaco++;
+                    cha.agregarCodigoLocalidad(cp);
                     break;
-                case "X": provCordoba.add(cp);
-                    nuevaProvinciaCordoba.agregarCodigoLocalidad(cp);
+                case "X": //provCordoba.add(cp);
+                    cba.agregarCodigoLocalidad(cp);
                     cantCordoba++;
                     break;
                 default:
@@ -54,12 +59,17 @@ public class Main {
             System.out.println(codigoPostal.get(i));
         }
 
+        correoNacional total= new correoNacional();
+        total.agregarProvincia(cba);
+        total.agregarProvincia(cata);
+        total.agregarProvincia(cha);
+
             //Crear clase provincia
             //Almacenar nombre de provincia
             //codigo de provincia?
             //localidades que contiene la provincia
 
-
+            //CÓDIGOS POR CADA PROVINCIA
             System.out.println("Cantidad de códigos de la provincia de Cordoba" +cantCordoba );
             System.out.println("Cantidad de códigos de la provincia de Catamarca" +cantCatamarca );
             System.out.println("Cantidad de códigos de la provincia de Chaco" +cantChaco );
@@ -73,16 +83,17 @@ public class Main {
         //getlocalidadporprovincia retornar CODIGOPOSTAL
         //getporlocalidadtodoslos datos retornar CODIGOPOSTAL
 
+
+
         System.out.print("Escriba provincia K,H o X: ");
         Scanner teclado2= new Scanner(System.in);
         String provinciaIngresada= teclado2.nextLine().toUpperCase();
         System.out.print("Escriba localidad o parte: ");
         Scanner teclado3= new Scanner(System.in);
         String parteLocalidad= teclado3.nextLine().toUpperCase();
-        System.out.println(parteLocalidad);
-        System.out.println(provinciaIngresada);
         String catamarca="K";
 
+        /*
         if(provinciaIngresada.equals(catamarca)){
             for(int i=0; i<provCatamarca.size(); i++){
                 if(provCatamarca.get(i).getLocalidad().contains(parteLocalidad)){
@@ -90,6 +101,11 @@ public class Main {
                 }
             }
         }
+*/
+
+        //EXITOSO
+        System.out.println("INTENTO LOCALIDAD Y PROVINCIA");
+        total.getLocalidadYProvincia(parteLocalidad,provinciaIngresada);
 
 
 
@@ -104,6 +120,7 @@ public class Main {
         System.out.println(codigoIngresado);
         String cordoba="X";
 
+   /*   //YA NO HACE FALTA
         if(provinciaIngresada2.equals(cordoba)){
             //VER ERROR
             for(int i=0; i<provCordoba.size(); i++){
@@ -113,12 +130,25 @@ public class Main {
             }
         }
 
+        */
+        //PROBADO, SALIO BIEN!!! resta mejorar el print toString , O NO HACE FALTA
+        System.out.println("ALTERNATIVA CODIGO Y PROVINCIA");
+
+
+
+
+        total.getCodigoYProvincia(codigoIngresado,provinciaIngresada2);
+
+
+
         //Localidades ingresando parte del nombre pero buscando en las tres provincias
 
-        System.out.print("Escriba localidad o parte: ");
+        System.out.print("Búqueda en todas las provincias. Ingrese localidad o parte del nombre: ");
         Scanner teclado6= new Scanner(System.in);
         String parteLocalidad2= teclado6.nextLine().toUpperCase();
 
+  /*
+        //OPCION 1, SE PUEDE ELIMINAR, ALTERNATIVA QUEDA
         //AGRUPACION DE PROVINCIAS, REGISTRONACIONAL
         //TENGA UN ARREGLO DE LAS PROVINCIAS
         //UN FOR QUE RECORRA TODAS LAS PROVINCIAS
@@ -142,6 +172,12 @@ public class Main {
             }
 
         }
+*/
+
+        //PROBADO, SALIÓ BIEN!!!!
+        System.out.println("ALTERNATIVA");
+
+        total.obtenerCodigoPorLocalidad(parteLocalidad2);
 
 
         //BUSQUEDA POR CODIGO
