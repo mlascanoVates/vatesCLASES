@@ -1,0 +1,57 @@
+paradigma estructural
+paradigma funcional 
+paradigma orientado a objetos
+
+
+JAVA orientado a objeto
+todos los codigos estan dentro de clases
+
+
+Clase estatica -
+los objetos son dinámicos
+
+Objeto - instancia de clase
+
+Conjunto de valores de un objeto -> Estado
+
+Comportamiento
+Cibjubto de mensajes que sabe atender (Métodos)
+
+operador New--> operador porque debe devolver un valor
+
+POO
+Encapsulamiento
+Herencia
+
+
+Cuatrante
+distancia origen
+
+agregarlo en tostring
+
+
+recorrer archivo
+crear un objeto
+auqnue no se guarde, se crea
+y con ella hacemos una busqueda
+hacemos referenciaa de mayor y menor edad
+
+No guardamos en ningun lado,xq no vimos conexiones
+todos lo
+
+sc.useDeliminter("[\\n\\r;]")
+
+nextInt DNI
+next NOMBRE
+
+"El nombre de la localidad lo cargan con .next()"
+
+A LA CLASE PUNTO, AGREGAR
+CALCULAR DISTANCIA HASTA OTRO PUNTO
+
+
+CODIGOS POSTALES
+indica con una letra, el nombre de la provincia
+
+
+HERRAMIENTA CLASSROOM  en GITHUB para entregar tarea, haciendo clonaciones

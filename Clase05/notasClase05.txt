@@ -1,0 +1,68 @@
+Algoritmo con tiempo Cuadrático
+Sumar cantidad de personas, 
+el calculo se ejecuta al cuadrado
+
+Falta sacarle carga a correoNacional,
+y agregarle métodos a Provincia
+
+
+API DE FLUJOS-> VAMOS  A VER Y NOS VA A SERVIR
+
+
+HERENCIA
+Relación entre clases
+
+Clase base y clase derivada
+
+*Herencia Simple
+Cada clase tiene una clase base
+
+*Puedo tener muchas clases que hereden de cierta clase base
+
+"ES UN" determina si está bien la relación	
+
+
+"TIENE" -> composición/agregación
+
+
+CIente
+codigo y nombre
+
+Cliente internet
+tiene mail y domicilio
+
+Cliente local
+tiene sucursal
+
+
+atributo Protected
+si está paa las derivadas
+
+
+CONSECUENCIAS RESPECTO DE LA HERENCIA:
+
+OVERRIDE(SOBREESCRITURA)
+clase base mismo método que derivada, ooeiderivada tiene el mimo nombre?
+
+sobreescritura fundamental para POLIMORFISMO
+*Siempre se ejecuta la de la version correcta del método.
+Clase más aBajo.
+
+
+EL COMPILADOR NO SABE QUE QUEREMOS COMPULAR	 UNA SOBREESCRITURLA-
+método toString
+
+--explico el motivo que se escribe para que no haya errores de compilacion
+
+CLASE EMPLEADA
+cada clase tiene cálculo diferente de sueldo ***VER SE PUEDE HACER  VUVLR
+
+*cADA UNA TIENE SU VARIANTE PARA PROGRAMAR SUELDO
+
+MAIN (CREA UNA INSTANCIA DE LOS 3 EMPLEADOS, Y MUESTRA SUEDLO Y TOTAL DE LOS MISMO)
+EMPLEADA
+3 DERVIADDA
+
+Variable acumulaodore
+aplicando herencia y sobreescritura
+

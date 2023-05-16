@@ -1,0 +1,30 @@
+espacion, tab, enter, 
+son separadores por defecto que tiene la clase Scanner.
+Es un delimitador por defecto
+
+\\Leer.txt  en windows para usar caminos relativos
+
+paquete io -> imput output de datos
+paquete nio -> tmb, más nvo
+
+ccb, coma separated value, formato tmb para transferir datos entre programas que no pueden comunicarse.
+Formato más universal para transferir datos entre dos programas.
+
+useDelimiter(";") -> se pone al final de cada elemento si se desea leer
+
+
+OPERADOR TERNARIO
+para resolver mayor de 2 numeros
+https://www.youtube.com/playlist?list=PL4irC4YYLZzJKjUxOn3n3_671MKWCQUHk
+
+
+-----
+CONDICIONALES Y ESTRUCTURA REPETITIVA
+--
+
+
+EJERCICIO TEMPERATURA
+OJO CON DIVIDIR POR DIAS CALIDOS, Y QUE NO HAYA, DIVIDIR POR CERO.
+
+Leer archivo con Scanner.
+El archivo de números en github.
