@@ -2,7 +2,6 @@ public class Obrero extends Empleado {
     int diasTrabajados;
     int legajo;
 
-
     double porcentajeTrabajado;
 
 
