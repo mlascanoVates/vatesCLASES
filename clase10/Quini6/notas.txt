@@ -1,0 +1,37 @@
+0 a 45
+
+
+Almacenar las apuestas:
+ArrayList
+HashSet
+TreeSet
+
+
+
+apuestas
+
+Clase apuesta
+guardar 6 numeros
+-crear apuesta
+-reciba un arreglo de 6 numeros
+-metodo: rechazar numeros repetidos
+
+Generador de numeros:
+crear 6 numeros random,
+si es repetido, seguir creando hasta que se complete el arreglo.
+
+Clase Juego
+guarda todos los cartones
+-metodo corre el sorteo: generar al azar numeros enteros sin repetir entre 1 y 46
+-Informar cantidad de boletas ganadoras,
+a partir del 6to numero verificar
+
+
+No hacer for anidados
+trabajar interseccion de conkjuntos
+
+
+
+USAR
+containsAll
+
