@@ -1,29 +1,26 @@
 import java.util.ArrayList;
 
-public abstract class Empleado {
+public abstract class Empleado implements Comparable {
     protected double sueldo;
     protected String nombre;
-
-
     protected int legajo;
 
+    protected ArrayList<Empleado> listaEmpleados;
 
     public Empleado( int legajo, String nombre, double sueldo) {
         this.legajo=legajo;
         this.nombre=nombre;
         this.sueldo = sueldo;
-
+        listaEmpleados= new ArrayList<>();
     }
 
-
-    public int getLegajo() {
-        return legajo;
+    public ArrayList<Empleado> getListaEmpleados() {
+        return listaEmpleados;
     }
 
-    public void setLegajo(int legajo) {
-        this.legajo = legajo;
+    public void setEmpleado(Empleado e) {
+        listaEmpleados.add(e);
     }
-
 
 
     public String getNombre() {
@@ -48,15 +45,15 @@ public abstract class Empleado {
 
     public String toString() {
         return "nombre= " + nombre +
-                ", sueldo del mes= " + getSueldoDelMes() ;
+                ", sueldo= " + getSueldoDelMes() ;
     }
-/*
+
     public void imprimirTodosLosSueldos(){
         for (Empleado e: listaEmpleados){
             System.out.printf("%15s %15f", e.getNombre(), e.getSueldoDelMes());
         }
     }
-*/
+
     public double sumarSueldos(ArrayList<Empleado> Empleados){
         double sumar=0;
         for (Empleado e: Empleados){
@@ -65,6 +62,14 @@ public abstract class Empleado {
             }
         }
         return sumar;
+    }
+
+    //METODO ARRAY SORT
+
+    @Override
+    public int compareTo(Object o) {
+        Empleado emp = (Empleado)o;
+        return this.nombre.compareTo(emp.nombre);
     }
 
 

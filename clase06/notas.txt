@@ -23,3 +23,5 @@ https://xmind.app/m/te7XjH
 3 Vendedor
 
 tipoEmpleado, Legajo, Nombre, Sueldo, depende de tipo
+
+
