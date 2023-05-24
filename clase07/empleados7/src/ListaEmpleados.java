@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
+<<<<<<< HEAD
 public class ListaEmpleados implements Comparator<Empleado>   {
+=======
+public class ListaEmpleados  {
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 
     protected ArrayList<Empleado> listaEmpleados;
     protected double sueldoMenor;
@@ -23,6 +27,13 @@ public class ListaEmpleados implements Comparator<Empleado>   {
     public ArrayList<Empleado> getListaEmpleados() {
         return listaEmpleados;
     }
+<<<<<<< HEAD
+=======
+/*
+    public void setListaEmpleados(ArrayList<Empleado> listaEmpleados) {
+        this.listaEmpleados = listaEmpleados;
+    }*/
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 
     protected Integer[] cantidadEmpleado= {0,0,0}; //Obrero, Administrativo, Vendedor
     protected int administrativo, obrero, vendedor;
@@ -50,6 +61,13 @@ public class ListaEmpleados implements Comparator<Empleado>   {
             }
         }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
     public double sumarSueldoObrero(double sueldo){
         return sueldoTotalObrero+=sueldo;
     }
@@ -60,6 +78,10 @@ public class ListaEmpleados implements Comparator<Empleado>   {
         return sueldoTotalVendedor+=sueldo;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
     //imprime Sueldo por tipo de Empleado
     public void totalSueldoXtipo(){
 
@@ -96,6 +118,11 @@ public class ListaEmpleados implements Comparator<Empleado>   {
                 sumar+=e.getSueldoDelMes();
 
         }
+<<<<<<< HEAD
+=======
+        //ver esta opcion
+        // sumar+=e.getSueldoDelMes, solo sin el for
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
         return sumar;
     }
 
@@ -109,10 +136,39 @@ public class ListaEmpleados implements Comparator<Empleado>   {
         }
         return cant;
     }
+<<<<<<< HEAD
 
 
     public Empleado cobraMenos(){
         Empleado emp=null;
+=======
+    /*
+
+    public Integer[] sumarXtipoEmpleados(ArrayList<Empleado> empleados){
+        Integer[] i= new Integer[3];
+        for (Empleado e: empleados){
+            switch (e.getNombre())
+            {
+                case "Obrero":
+                    obrero++;
+                    cantidadEmpleado[0]+=1;
+                    System.out.println( "Entro a swith"+ cantidadEmpleado[0].byteValue());
+                case "Administrativo":
+                    administrativo++;
+                    cantidadEmpleado[1]+=1;
+                case "Vendedor":
+                    vendedor++;
+                    cantidadEmpleado[2]+=1;
+            }
+        }
+        return i;
+    }
+*/
+
+    public Empleado cobraMenos(){
+        Empleado emp=null;
+        //ver que no sale
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
         for(Empleado e: listaEmpleados){
             if(e.getSueldoDelMes()<sueldoMenor){
                 sueldoMenor= e.getSueldoDelMes();
@@ -123,6 +179,7 @@ public class ListaEmpleados implements Comparator<Empleado>   {
         }
         return emp;
     }
+<<<<<<< HEAD
 
 
     public int compare(Empleado e1, Empleado e2)
@@ -131,5 +188,41 @@ public class ListaEmpleados implements Comparator<Empleado>   {
     }
 
 
+=======
+/*
+    public ArrayList<Empleado> getArregloXnombre(){
+        Empleado emp=null;
+        ArrayList<Empleado> arregloNombre=null;
+        int valor=0;
+        for(Empleado e: listaEmpleados){
+            if(emp==null){
+                emp=e;
+            }
+            valor= e.getNombre().compareTo(emp.getNombre());
+            if(valor<0){
+                System.out.println(valor);
+                emp=e;
+                if(!arregloNombre.contains(emp)||arregloNombre==null)
+                arregloNombre.add(emp);
+            }
+        }
+        return arregloNombre;
+    }
+*/
+/*
+    @Override
+    public int compare(Empleado o1, Empleado o2) {
+        return o1.compareTo(o2);
+    }*/
+/*
+    public void comparar(){
+
+        for(Empleado e: listaEmpleados){
+            System.out.println(e);
+
+        }
+    }
+*/
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 
 }

@@ -43,6 +43,10 @@ public class Obrero extends Empleado {
                 super.toString()+ " "+
                 ", diasTrabajados= " + diasTrabajados +
                 ", porcentajeTrabajado= " + porcentajeTrabajado +
+<<<<<<< HEAD
+=======
+                ", sueldo= " + sueldo +
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
                 '}';
     }
 

@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Libro {
 
+<<<<<<< HEAD
     private String titulo,autor;
     private int codigo;
     private int estado; //Disponible, Prestado, Extraviado
@@ -14,10 +15,22 @@ public class Libro {
         this.titulo = titulo;
         this.autor=autor;
         this.estado= estado;
+=======
+        String titulo;
+        int codigo;
+        double precioDeReposicion;
+        Integer[] estado= {1,2,3};
+        ArrayList<Prestamo> prestamosDelLibro;
+
+    public Libro(String titulo, int codigo, double precioDeReposicion) {
+        this.titulo = titulo;
+        this.codigo = codigo;
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
         this.precioDeReposicion = precioDeReposicion;
         prestamosDelLibro= new ArrayList<>();
     }
 
+<<<<<<< HEAD
     public int getEstado()
     {
         return estado;
@@ -91,4 +104,9 @@ public class Libro {
                 ", precioDeReposicion= $" + String.format("%8.2f",precioDeReposicion) +
                 ", estado= " +  getEstado() +"\n";
     }
+=======
+
+
+
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 }

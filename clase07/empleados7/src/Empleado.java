@@ -45,7 +45,11 @@ public abstract class Empleado implements Comparable {
 
     public String toString() {
         return "nombre= " + nombre +
+<<<<<<< HEAD
                 ", sueldo= " + getSueldoDelMes() ;
+=======
+                ", sueldo= " + sueldo ;
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
     }
 
     public void imprimirTodosLosSueldos(){
@@ -64,8 +68,11 @@ public abstract class Empleado implements Comparable {
         return sumar;
     }
 
+<<<<<<< HEAD
     //METODO ARRAY SORT
 
+=======
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
     @Override
     public int compareTo(Object o) {
         Empleado emp = (Empleado)o;

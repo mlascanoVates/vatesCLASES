@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -86,4 +87,15 @@ public class Biblioteca {
                 "LIBROS: \n" + conjuntoLibros +"\n"+
                 ", PRESTAMOS: \n" + listadoPrestamos;
     }
+=======
+import java.util.ArrayList;
+
+public class Biblioteca {
+    ArrayList<Libro> grupoLibros;
+
+
+
+    // Cantidad de libros en cada estado (tres totales)
+
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 }

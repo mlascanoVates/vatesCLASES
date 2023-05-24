@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -78,4 +79,10 @@ public class Main {
         }
     }
 
+=======
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 }

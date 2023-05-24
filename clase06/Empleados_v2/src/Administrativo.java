@@ -44,4 +44,3 @@ public class Administrativo extends Empleado{
     }
 }
 
-
