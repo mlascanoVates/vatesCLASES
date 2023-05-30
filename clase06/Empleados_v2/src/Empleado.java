@@ -3,24 +3,27 @@ import java.util.ArrayList;
 public abstract class Empleado {
     protected double sueldo;
     protected String nombre;
+
+
     protected int legajo;
 
-    protected ArrayList<Empleado> listaEmpleados;
 
     public Empleado( int legajo, String nombre, double sueldo) {
         this.legajo=legajo;
         this.nombre=nombre;
         this.sueldo = sueldo;
-        listaEmpleados= new ArrayList<>();
+
     }
 
-    public ArrayList<Empleado> getListaEmpleados() {
-        return listaEmpleados;
+
+    public int getLegajo() {
+        return legajo;
     }
 
-    public void setEmpleado(Empleado e) {
-        listaEmpleados.add(e);
+    public void setLegajo(int legajo) {
+        this.legajo = legajo;
     }
+
 
 
     public String getNombre() {
@@ -45,15 +48,15 @@ public abstract class Empleado {
 
     public String toString() {
         return "nombre= " + nombre +
-                ", sueldo= " + sueldo ;
+                ", sueldo del mes= " + getSueldoDelMes() ;
     }
-
+/*
     public void imprimirTodosLosSueldos(){
         for (Empleado e: listaEmpleados){
             System.out.printf("%15s %15f", e.getNombre(), e.getSueldoDelMes());
         }
     }
-
+*/
     public double sumarSueldos(ArrayList<Empleado> Empleados){
         double sumar=0;
         for (Empleado e: Empleados){

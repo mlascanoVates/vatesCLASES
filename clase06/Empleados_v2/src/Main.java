@@ -42,70 +42,12 @@ public class Main {
             }
 
         }
-
-
-
-
-
 /*
-        Obrero obrero= new Obrero(455,"Ana", 4000,17);
-        Administrativo administrativo=new Administrativo(65764,"Romina", 7000,true);
-        Administrativo administrativo2=new Administrativo(66775,"Romina", 700000,true);
-        Administrativo administrativo3=new Administrativo(44566,"Romina", 1000000,true);
-        Vendedor vendedor= new Vendedor(8976,"Oscar", 6000,10000);
-        Vendedor vendedor2= new Vendedor(8866,"Damian", 5400,45000);
+        //cantidad de empleado por cada tipo
+        //Cantidad de vendedores que cobran presentismo
+        //Empleados que cobren más de 200000
+        //Búsqueda por legajo
 
-        System.out.println("Sueldo Obrero: $" + obrero.getSueldo());
-        System.out.println("SueldoAdministrativo: $" + administrativo.getSueldo());
-        System.out.println("Sueldo Vendedor: $" + vendedor.getSueldo());
-        System.out.println();
-
-        ArrayList<Empleado> empleados= new ArrayList<>();
-        empleados.add(obrero);
-        empleados.add(administrativo);
-        empleados.add(vendedor);
-
-
-        System.out.printf("%15s %15s \n", "Nombre", "Sueldo");
-        for (Empleado e: empleados){
-            System.out.printf("%15s %15.2f \n", e.getNombre(), e.getSueldoDelMes());
-        }
-
-        double sumar=0;
-        for (Empleado e: empleados){
-            if(e instanceof Empleado){
-                sumar+=e.getSueldoDelMes();
-            }
-        }
-
-        System.out.printf("Total de los sueldos a pagar es $%12.2f \n", sumar);
-
-        int sumar2=0;
-        for (Empleado e: empleados){
-            if(e instanceof Administrativo){
-               sumar2++;
-            }
-        }
-
-        System.out.println("Cantidad de empleados que deben cobra presentismo: " + sumar2);
-
-        ListaEmpleados lista= new ListaEmpleados();
-        lista.addEmpleado(obrero);
-        lista.addEmpleado(administrativo);
-        lista.addEmpleado(administrativo2);
-        lista.addEmpleado(administrativo3);
-        lista.addEmpleado(vendedor);
-        lista.addEmpleado(vendedor2);
-
-       for (int i=0; i<3; i++){
-            System.out.println("Cantidad por tipo de empleado: " + lista.cantidadEmpleado[i].intValue());
-        }
-
-        System.out.println("Cantidad de Administrativos con presentismo: " + lista.getAdmConPresentismo());
-
-        System.out.println("Cantidad de empleados que cobra más de 200000 es: " + lista.cobra200000());
-
-*/
 
         //ARCHIVO DE EMPLEADOS
 
@@ -116,10 +58,20 @@ public class Main {
 
         //TOTAL DE SUELDOS A PAGAR POR CADA TIPO DE EMPLEADO
         lista1.totalSueldoXtipo();
-        //cobra menos
-        System.out.println(lista1.cobraMenos());
+
+        //DATOS DEL EMPLEADO QUE COBRA MENOS
+        System.out.println("Cobra menos :" + lista1.cobraMenos());
+
+        //Promedio de sueldo de los obreros
 
 
+        //Busqueda por legajo
+        System.out.println("Búsqueda por legajo: "+ lista1.getBusquedaXlegajo(5567));
+
+        //Promedio
+        //55674 saldo sin descuentos o con presentismos
+        System.out.println("Promedio: "+ lista1.promedioDeSueldos());*/
+        
 
     }
 

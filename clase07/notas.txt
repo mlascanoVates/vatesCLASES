@@ -1,0 +1,4 @@
+CompareTo
+
+en String
+la comparación se hace de acuerdo a su numero ASCII

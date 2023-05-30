@@ -1,0 +1,27 @@
+Instruccion switch,
+Expresión switch (expresion nva)
+-si cada caso retorna un valor, no usar yield
+
+
+INTERFACES
+Necesito hacer polimorfisto independientemente de la herencia.
+
+
+Por lo general se usan interfaces existentes
+
+
+FINALIZA BLOQUE
+COMPOSICION DE 2 NIVELES
+
+SE CREA REPOSITORIO PROPIO
+CLONAMOS, Y LUEGO DE TERMINAR HACEMOS PUSH
+
+resolver el github que no me da permiso para subir archivos
+
+creo archivo.csv
+otro prestamos.csv: tener codigo del tibro prestado
+
+estados-> 0 disponible, 1
+vector de numeros
+
+Promedio generl de prestamos

@@ -1,11 +1,20 @@
 import org.w3c.dom.ls.LSOutput;
+<<<<<<< HEAD
+import java.util.Comparator;
+=======
 
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+<<<<<<< HEAD
+public class ConjuntoPersonas implements Comparator<Persona>  {
+
+=======
 public class ConjuntoPersonas {
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
     private Persona cadaPersona;
    // private Persona personaMayor;
 
@@ -115,6 +124,8 @@ public class ConjuntoPersonas {
         return listaPorApellido;
     }
 
+<<<<<<< HEAD
+=======
      @Override
     public String toString() {
 
@@ -122,6 +133,7 @@ public class ConjuntoPersonas {
                 "listaPersonas=" + getListaPersonas() +
                 '}';
     }
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 
     public ConjuntoPersonas crearConjunto(Scanner sc){
 
@@ -137,6 +149,33 @@ public class ConjuntoPersonas {
         }
         return conjunto;
     }
+<<<<<<< HEAD
+/*
+    public int compare(Persona p1, Persona p2)
+    {
+        return p1.getNombre().compareTo(p2.getNombre());
+    }*/
+
+/*
+     @Override
+    public int compareTo(ConjuntoPersonas o) {
+        return this.getListaPersonas().compareTo(o.getListaPersonas());
+    }*/
+
+    @Override
+    public String toString() {
+
+        return "ConjuntoPersonas{" +
+                "listaPersonas=" + getListaPersonas() +
+                '}';
+    }
+    public int compare(Persona o,Persona u) {
+        int a= o.getApellido().compareTo(u.getApellido());
+        if(a==0)
+        {return o.getNombre().compareTo(u.getNombre());}
+        return o.getApellido().compareTo(u.getApellido());
+    }
+=======
 
 
     //agregar un método que devuelva un arraylist de personas ordenadas por apellido y nombre
@@ -162,5 +201,6 @@ public class ConjuntoPersonas {
     public int comparar(){
         Arrays.sort(getListaPersonas());
     }*/
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 
 }

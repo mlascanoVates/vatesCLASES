@@ -61,8 +61,6 @@ public class ListaEmpleados {
                 sumar+=e.getSueldoDelMes();
             }
         }
-        //ver esta opcion
-        // sumar+=e.getSueldoDelMes, solo sin el for
         return sumar;
     }
 

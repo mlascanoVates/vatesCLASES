@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
+<<<<<<< HEAD
+public class ListaEmpleados implements Comparator<Empleado>   {
+=======
 public class ListaEmpleados  {
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 
     protected ArrayList<Empleado> listaEmpleados;
     protected double sueldoMenor;
@@ -23,10 +27,13 @@ public class ListaEmpleados  {
     public ArrayList<Empleado> getListaEmpleados() {
         return listaEmpleados;
     }
+<<<<<<< HEAD
+=======
 /*
     public void setListaEmpleados(ArrayList<Empleado> listaEmpleados) {
         this.listaEmpleados = listaEmpleados;
     }*/
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 
     protected Integer[] cantidadEmpleado= {0,0,0}; //Obrero, Administrativo, Vendedor
     protected int administrativo, obrero, vendedor;
@@ -54,10 +61,13 @@ public class ListaEmpleados  {
             }
         }
 
+<<<<<<< HEAD
+=======
 
 
 
 
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
     public double sumarSueldoObrero(double sueldo){
         return sueldoTotalObrero+=sueldo;
     }
@@ -68,7 +78,10 @@ public class ListaEmpleados  {
         return sueldoTotalVendedor+=sueldo;
     }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
     //imprime Sueldo por tipo de Empleado
     public void totalSueldoXtipo(){
 
@@ -105,8 +118,11 @@ public class ListaEmpleados  {
                 sumar+=e.getSueldoDelMes();
 
         }
+<<<<<<< HEAD
+=======
         //ver esta opcion
         // sumar+=e.getSueldoDelMes, solo sin el for
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
         return sumar;
     }
 
@@ -120,6 +136,12 @@ public class ListaEmpleados  {
         }
         return cant;
     }
+<<<<<<< HEAD
+
+
+    public Empleado cobraMenos(){
+        Empleado emp=null;
+=======
     /*
 
     public Integer[] sumarXtipoEmpleados(ArrayList<Empleado> empleados){
@@ -146,6 +168,7 @@ public class ListaEmpleados  {
     public Empleado cobraMenos(){
         Empleado emp=null;
         //ver que no sale
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
         for(Empleado e: listaEmpleados){
             if(e.getSueldoDelMes()<sueldoMenor){
                 sueldoMenor= e.getSueldoDelMes();
@@ -156,6 +179,16 @@ public class ListaEmpleados  {
         }
         return emp;
     }
+<<<<<<< HEAD
+
+
+    public int compare(Empleado e1, Empleado e2)
+    {
+        return e1.getNombre().compareTo(e2.getNombre());
+    }
+
+
+=======
 /*
     public ArrayList<Empleado> getArregloXnombre(){
         Empleado emp=null;
@@ -190,5 +223,6 @@ public class ListaEmpleados  {
         }
     }
 */
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 
 }

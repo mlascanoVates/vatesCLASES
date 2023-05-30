@@ -1,0 +1,114 @@
+PROGRAMACION FUNCIONAL
+
+api: opcionales
+api: flujos
+
+Programacion estructurada,
+VARIABLE
+
+programacion orientada a obj, la variable guarda un objeto
+
+En programacion funcional, 
+la variable guarda codigo fuente.
+*Puede variar su valor
+
+List y hasjel, lenguaje funcional puro!
+
+EL uso de programacion funcional se llama EXTENSION DEL LENGUAJE FUNCIONAL
+
+Ahora tenemos TIPO DE DATO FUNCION
+
+¿Qupe gano?
+POLIMOFIRMO
+YA no hay stirch
+es xXLKI
+rPADIO.
+
+Perdio: hacer todalas dereivadas
+
+Entonces pparecen la extensione funcionlrd
+
+JAVA DA:
+CUANDO TNEMOS UNA CLASE QUE SOLO ES USADA 1 VEZ.
+CLASES internas. 
+En UML tiene un simbolo especial
+que se programan en el lugar.
+
+JAVA OFRECE HEREDAR EN EL LUGAR.-> CLASE ANONIMA
+usado en libreria para hacer ventanas
+
+EXTENSIONES FUNCIONALES
+Toda interfaz que tenga un UNICO MÉTODO se llama, INTERFAZ FUNCIONAL.
+
+
+FUNCIONES LAMDA, funciones anónimas, SIN NOMBRE, se las pone dentro de una variable que las referencie
+
+Cuando es una linea de codigo podemos sacar llave, y no usar return
+
+VECTOR DE FUNCIONES
+
+EJ. METODO COMPARATOR
+cuando comparamos personas
+
+TAREA INVESTIGAR:
+Cuando una interfaz es funcional corro el riesgo de agregar otro método..
+Para evitar eso, se pone 
+@Functional Interface
+
+
+BIBLIOTECA ESTANDAR hay muchas interfaces funcionales ya ceasdas.
+
+import java.function.*;
+
+JAVA: INTERFACES FUNCIONSLS DEPENDIENdo 
+*Metodo sin parametro, sin retorno -> RUNNABLE, una subrutina.
+*recibe un parametro, y no hace nada(la funcion se come al dato), ej log-> CONSUMER<T>
+*No tenga parátro, pero retorna uno-> SUPPLIR<T>, ej Random
+
+**CASO PARTICULAR-> tiene un parámetro, de retorno tiene un BOLEAN
+PREDICTADO
+
+**Recbie un dato, y devuelve dato dntinto de parámetro y booleanl,Retorno del tipo diferente al parétroo
+FUMCTION>
+
+*Tenemos interfaz funcional que recibe 1 parátro, ydevuelve otro de otro tipo.
+UNARY OPERATORz<T>
+
+*BICONSUMER}
+*BIPREDICATE
+*BINARYOPERATOPM<T>, retorno el mismo tipo del los parátros.
+binary operator double-- devuelve
+
+todas estas son buenas para clases programadas x nosotros, pero no para CLASES ENVOLTORIOS  EJ <INTEGER>
+en vez de <DOUBEL>,se puede usar
+<DoubleBynaryOPerator>
+
+Vamos a necesitar CONOCER ESTO!!!
+
+
+TAREA
+
+NUMERO PRIMO:
+*No tiene divisores excepto 1 y el mismo.
+Por convención 1 no es primo
+-1 afuera
+-1er primo 2.
+-2do quitamos todos los multiplos de 2(porque tienen como divisor 2)
+-siguiente numero primo, el 3
+-3ero quitamos multiplos de 3
+-5 siguiente numero primo
+-quitamos multiplos de 5
+-siguiente 7
+-quitamos multiplos de 7
+-siguiente 11,... ya no hay mas primos hasta 100 para quitar.
+
+DPS TODOS LO NUMEROS QUE QUEDEN SON PRIMOS
+https://www.youtube.com/watch?v=GST7EhThqpQ&ab_channel=ArchimedesTube
+
+otro
+El algoritmo más simple, para determinar si un número es primo o compuesto, es hacer una serie de divisiones sucesivas del número, con todos los números menores que él, si alguna división da como residuo 0 o es divisible con el número entonces es compuesto en caso contrario es primo.
+https://www.conoce3000.com/html/espaniol/Libros/Matematica01/Cap07-03-AlgoritmoDeterminarNumeroPrimo.php#:~:text=El%20algoritmo%20m%C3%A1s%20simple%2C%20para,en%20caso%20contrario%20es%20primo.
+
+
+
+PROGRAMACION FUNCIONAL VS IMPERATIVA

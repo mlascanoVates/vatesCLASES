@@ -38,6 +38,15 @@ public class Main {
             }
 
         }
+<<<<<<< HEAD
+/*
+        //cantidad de empleado por cada tipo
+        //Cantidad de vendedores que cobran presentismo
+        //Empleados que cobren más de 200000
+        //Búsqueda por legajo
+
+
+=======
 
 
 
@@ -103,6 +112,7 @@ public class Main {
 
 *//*
 
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
         //ARCHIVO DE EMPLEADOS
 
         //TOTAL GENERAL
@@ -112,6 +122,18 @@ public class Main {
 
         //TOTAL DE SUELDOS A PAGAR POR CADA TIPO DE EMPLEADO
         lista1.totalSueldoXtipo();
+<<<<<<< HEAD
+
+        //DATOS DEL EMPLEADO QUE COBRA MENOS
+        //System.out.println("Cobra menos :" + lista1.cobraMenos());
+
+        //Promedio de sueldo de los obreros
+
+/*
+
+   //   Primer intento al la lista la converti en arreglo
+    /*    for(int i=0; i<lista1.getListaEmpleados().size(); i++){
+=======
         //cobra menos
         System.out.println(lista1.cobraMenos());
 
@@ -123,18 +145,52 @@ public class Main {
 
         //VER METODO Y COMO ESCRIBIRLO MEJOR
         for(int i=0; i<lista1.getListaEmpleados().size(); i++){
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 
             for(Empleado e: lista1.getListaEmpleados()) {
                 listaOrdenada[i] = e;
                 i++;
             }
         }
+<<<<<<< HEAD
+
+=======
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
         Arrays.sort(listaOrdenada);
         System.out.println("Se imprime lista ordenada");
         for (Empleado e: listaOrdenada){
             System.out.println(e);
+<<<<<<< HEAD
+        }*/
+
+        /*
+        //usando COLLECTIONS
+        int i=1;
+        ArrayList<Empleado> empleadosNuevos= new ArrayList<>();
+        empleadosNuevos=lista1.getListaEmpleados();
+        Collections.sort(empleadosNuevos,lista1);
+        for (Empleado e : empleadosNuevos) {
+            System.out.println(i + ": "+ e);
+            i++;
+        }*/
+/*
+        int i=1;
+
+        Collections.sort(lista1.getListaEmpleados());
+        for (Empleado e : lista1.getListaEmpleados()) {
+            System.out.println(i + ": "+ e);
+            i++;
+        }*/
+        int i=1;
+        Collections.sort(lista1.getListaEmpleados(),new ComparadorSueldos());
+        for (Empleado e : lista1.getListaEmpleados()) {
+            System.out.println(i + ": "+ e);
+            i++;
+        }
+=======
         }
 
 
+>>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
     }
 }

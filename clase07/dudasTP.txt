@@ -1,0 +1,29 @@
+TP DUDAS
+
+libro extraviado, quien extravia,
+socio o biblioteca
+
+Capaz se facilita si el extravio es del socio, asi en vez de devuelto sea solo extravio
+
+La lista de los préstamos está ordenada cronologicamente
+
+
+LISTA PRESTAMO
+Puede ser identificador o codigo de libro, porq ambos seria, es necesario separar?
+
+
+Primero se carga la lista de libros, y su estado inicial es disponible
+Despues se cargan los préstamos y definen el estado final del libro
+
+
+Puede ser identificador o codigo de libro, porq ambos seria, es necesario separar?			
+23 no tuvo prestamos			
+28 no tuvo			
+
+
+Hacer el constructor de scanner, 
+el menu
+y el print con%
+
+Se aclara que el libro puede estar extraviado en la biblioteca, o un cliente no lo haya devuelto, y lo haya extraviado? o en dicho caso el devuelto es false?
+O solo que extraviado sea x la biblioteca

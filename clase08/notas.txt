@@ -1,0 +1,14 @@
+Clases Genéricas
+
+Un algoritmo que ande con entero, tmb anda con flota, solo cambia retorno.
+
+
+Criterio tipo Genéricos.
+Podemos darle a una clase un Parámetro.
+Clases parametrizadas,
+clases cuyo nombre involucren otro dato
+
+INTEGER
+
+
+CLase arraylist tiene parámetro de clase   -> simbolo delimitador <> (paréntesis angular), sirve para envolver algo.

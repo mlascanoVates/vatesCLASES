@@ -16,16 +16,12 @@ public class ListaEmpleados {
         this.admConPresentismo = admConPresentismo;
     }
 
+    protected Integer[] cantidadEmpleado= {0,0,0}; //Obrero, Administrativo, Vendedor
+    protected int administrativo, obrero, vendedor;
     public ArrayList<Empleado> getListaEmpleados() {
         return listaEmpleados;
     }
-/*
-    public void setListaEmpleados(ArrayList<Empleado> listaEmpleados) {
-        this.listaEmpleados = listaEmpleados;
-    }*/
 
-    protected Integer[] cantidadEmpleado= {0,0,0}; //Obrero, Administrativo, Vendedor
-    protected int administrativo, obrero, vendedor;
 
     public ListaEmpleados() {
         listaEmpleados=new ArrayList<>();
@@ -52,8 +48,6 @@ public class ListaEmpleados {
 
 
 
-
-
     public double sumarSueldoObrero(double sueldo){
         return sueldoTotalObrero+=sueldo;
     }
@@ -65,35 +59,9 @@ public class ListaEmpleados {
     }
 
 
-    //imprime Sueldo por tipo de Empleado
-    public void totalSueldoXtipo(){
-
-     for (Empleado e: listaEmpleados)
-        if(e instanceof Empleado){
-            if(e instanceof Obrero){
-                sumarSueldoObrero(e.getSueldoDelMes());
-            }
-            else if(e instanceof Administrativo){
-                sumarSueldoAdm(e.getSueldoDelMes());
-            }
-            else if(e instanceof Vendedor){
-                sumarSueldoVendedor(e.getSueldoDelMes());
-            }
-        }
-        System.out.println("Total sueldo Obrero: " + sueldoTotalObrero);
-        System.out.println("Total sueldo Administrativo: " + sueldoTotalAdm);
-        System.out.println("Total sueldo Vendedor: " + sueldoTotalVendedor);
-
-    }
 
 
-
-    public void sumarAdmPresentismo(Empleado e){
-        if(((Administrativo) e).isPresentismo()){
-           admConPresentismo++;
-        }
-    }
-
+    //METODO1
     public double totalAPagar(){
         double sumar=0;
 
@@ -101,12 +69,67 @@ public class ListaEmpleados {
                 sumar+=e.getSueldoDelMes();
 
         }
-        //ver esta opcion
-        // sumar+=e.getSueldoDelMes, solo sin el for
         return sumar;
     }
 
 
+    //6 imprime total a pagar    por tipo de Empleado
+    public void totalSueldoXtipo(){
+        for (Empleado e: listaEmpleados)
+            if(e instanceof Empleado){
+                if(e instanceof Obrero){
+                    sumarSueldoObrero(e.getSueldoDelMes());
+                }
+                else if(e instanceof Administrativo){
+                    sumarSueldoAdm(e.getSueldoDelMes());
+                }
+                else if(e instanceof Vendedor){
+                    sumarSueldoVendedor(e.getSueldoDelMes());
+                }
+            }
+        System.out.println("Total sueldo Obrero: " + sueldoTotalObrero);
+        System.out.println("Total sueldo Administrativo: " + sueldoTotalAdm);
+        System.out.println("Total sueldo Vendedor: " + sueldoTotalVendedor);
+
+    }
+
+    public double totalSueldoAmd(){
+        double sumar=0;
+        for (Empleado e: listaEmpleados)
+            if(e instanceof Administrativo){
+                sumar +=e.getSueldoDelMes();
+                }
+        return sumar;
+    }
+    public double totalSueldoObrero(){
+        double sumar=0;
+        for (Empleado e: listaEmpleados)
+            if(e instanceof Obrero){
+                sumar +=e.getSueldoDelMes();
+            }
+        return sumar;
+    }
+    public double totalSueldoVendedor(){
+        double sumar=0;
+        for (Empleado e: listaEmpleados)
+            if(e instanceof Vendedor){
+                sumar +=e.getSueldoDelMes();
+            }
+        return sumar;
+    }
+
+
+
+
+    //3 cantidad de empleados con presentismo
+    public void sumarAdmPresentismo(Empleado e){
+        if(((Administrativo) e).isPresentismo()){
+            admConPresentismo++;
+        }
+    }
+
+
+    //4 empleados que cobran más de 200000
     public int cobra200000(){
         int cant=0;
         for(Empleado e:listaEmpleados){
@@ -116,6 +139,23 @@ public class ListaEmpleados {
         }
         return cant;
     }
+
+    //5 BÚSQUEDA POR LEGAJO
+    public Empleado getBusquedaXlegajo(int legajo){
+        Empleado emp =null;
+        for(Empleado e: listaEmpleados){
+            if(e instanceof Empleado){
+                if(e.getLegajo()==legajo){
+                    emp=e;
+                    return emp;
+                }
+            }
+        }
+        return emp;
+    }
+
+
+    //segunda CANTIDAD DE EMPLEZADO POR CADA TIPO
     /*
 
     public Integer[] sumarXtipoEmpleados(ArrayList<Empleado> empleados){
@@ -139,21 +179,37 @@ public class ListaEmpleados {
     }
 */
 
+
+    //7 empleado que menos cobra
     public Empleado cobraMenos(){
+        int entra=0;
         Empleado emp=null;
-        //ver que no sale
         for(Empleado e: listaEmpleados){
-            System.out.println("Entra");
-            if(e.getSueldoDelMes()<sueldoMenor){
-                sueldoMenor= e.getSueldoDelMes();
-                if(e instanceof Empleado){
+            if(e instanceof Empleado){
+                if(entra==0 || e.getSueldoDelMes()<sueldoMenor){
+                    sueldoMenor= e.getSueldoDelMes();
                     emp =e;
+                    entra++;
                 }
-                System.out.println("Entra");
             }
         }
         return emp;
     }
 
+    public double promedioDeSueldos(){
+        double promedio=0;
+        if(listaEmpleados.size()>0){
+            promedio= totalAPagar()/listaEmpleados.size();
+        }
+        return promedio;
+    }
+
+    public double promedioSueldoObreros(){
+        double promedio=0;
+        if(listaEmpleados.size()>0){
+            promedio= totalAPagar()/listaEmpleados.size();
+        }
+        return promedio;
+    }
 
 }

@@ -1,0 +1,118 @@
+API DE COLECCIONES
+“interfaz de programación de aplicaciones"
+Es el código que determina el funcionamiento de un programa informático que sirve para canalizar información de una parte de un software a otra.
+
+Interfaz-> collection
+
+La API se divide en Colecciones y Mapas
+
+Interfaz Collection:
+CLASES:
+*List: Clases donde los datos puedan ser recorrido en el orden ingresado, u otro, pero no por valor.
+Implementaciones:
+->ArrayList
+->LinkedList
+->Vector->Stack
+Se diferencia en la tecnologia: donde guardan los datos
+-ArrayList, Dentro de un arreglo, manipula el arreglo resolviendo el tamaño
+-LinkedList, guarda los datos en una lista vinculad, guarda el valor, y el siguiente.
+-Vector, funciona en ambiente de multiprogramación. Tiene metodos para las inconsistencia. Datos consistente. SINCRONIZADO
+
+*Queue
+
+*Set
+
+Insertar 100000 números al azar en una colección de tipo ArrayList
+Los números deben ser enteros entre -100000 y 100000
+Luego de finalizada la carga mostrar:
+La cantidad de elementos insertados (método size())
+Si  existe o no el número 35654
+Los primeros 100 números al recorrerlo con for mejorado
+
+SISTEM devuelve el tiempo en ms
+
+System.currentTimeMillis();
+
+*Interfaz Set
+No acepta ni nulos ni repetidos
+Implementacion HASHSET
+guarda los datos en en Tabla de HASH
+distribuye con funcion de dispersión
+
+*tREEset
+tiene una busqueda un poco más lenta, pero ordenado.
+
+
+hacer con hashset
+y con treeset
+
+
+
+
+
+Tiempo carga: 23 milisegundos
+encontrados = 39417
+tiempo busqueda = 5482 milisegundos
+
+HashSet
+La cantidad de elementos insertados fue de 100000
+
+Tiempo carga: 16 milisegundos
+encontrados = 39313
+tiempo busqueda = 9 milisegundos
+
+TreeSet
+La cantidad de elementos insertados fue de 100000
+
+Tiempo carga: 40 milisegundos
+encontrados = 39280
+tiempo busqueda = 30 milisegundos
+
+
+TAREA
+Programa que lee conjunto de empleados desde archivo
+Usar comparable
+o usar un treeset
+
+Modificar los ejercicios de tarea de la clase 7 utilizando una estructura de datos adecuada.
+El tema de las búsquedas.
+
+
+*QUINI 6
+cada boleta tiene  6 numeros sin repeticion
+entre 1 y 46.
+Creamos un modelo de clase que permita guardar la BOLETA o clase apuesta
+Que guarde los numeros y verifique que sean 6, no estén repetidos..
+*Clase que permita almacenar todas las boletas CONJUNTO DE BOLETAS
+*el main genera al azar los numeros y va agregand.
+*SIMULAR EL JUEGO
+Generar al azar numeros enteros sin repeticion entre 1 y 46-
+Desde el 6to numero verificar si alguna boleta ganó.
+E informar la cantidad de boletas ganadoras.
+Si al sacar 6, sacar un 7mo.
+si no hay ganador se puede sacar un 8vo.
+
+DESDE LA CLASE INTERFAZ
+clase juego tiene que tener metodo para agregar una apuesta
+simular juego debe devolver la lista de boletas ganadoras.
+
+Boleta que diga VALIDA cuando está bien cargada.
+
+INVESTIGAR metodo
+addAll-> para verificar cuantos numeros acertó
+conjunto temporal, que haga la INTERSECCIÓN -> da la cantidad de numeros acertados.
+
+como se intersecan 2 SET en java
+
+La generacion de numeros lo tinee que hacer el main
+
+tranquilamente 1 millon de boletas
+
+METODOS DE 4/5LINEAS
+
+**pensar para un futuro 
+UN APORTADOR PUEDE APOSTAR VARIAS VECES
+
+MIERCOLES VEMOS MAPAS
+
+Nose xq no puedo agregar en TREESET PERO SI EN HASHSET
