@@ -1,0 +1,52 @@
+M
+
+APA
+busqueda lenta
+casi nunca sirve el metodo contains.
+contains solo opera con referencia.
+no busca los atributos de los objetos.
+
+hay veces que cargamos , formas que cargamos que tienen unicidad,
+ej que tengan clave de busqueda CUIL, Sirve como clave de id.
+Atributo que nunca se  repite.
+Sirve para identificar una instancia en particular.
+Funcionan con vectores
+
+metodo GET, recibe el dato clave, y retorna al objeto persona asociado.
+
+Rapido para guardar, rapido para buscar.
+
+INTERFAZ:
+*HashMap
+
+EJEMPLO DE USO:
+contador para los numeros que contienen tal numero final
+*
+correo
+clave: provincia, y pedimos los datos conectados a la provincia.
+
+Ningun MAP puede ser recorrido con for Mejorado
+Brinda 3 METODOS QUE brinda metodos recorrido:
+*metodo key
+*meoto value
+*metodo treeset
+TREESET:
+conjunto de pares
+Los 3 se llaman las vistas del mapa
+
+INTERFASE
+SortedMap->TreeMap
+
+KEYSET
+VALUES
+ENTRYSET -> Ambos valores
+
+CONTADOR:
+EJEMPLO CODIGOS POSTALES
+
+//
+RESUELVE QUINI6
+Interseccion:
+metodo retainAll
+
+

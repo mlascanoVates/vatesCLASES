@@ -1,0 +1,11 @@
+Los numeros de la boleta que sean TreeSet
+
+El grupo de boletas no importa, pueden ser HashSet, porque no es que necesitan guardarse con orden, aparte como se ordena. (capaz x eso no me dejaba agregar)
+
+Dentro de la clase juego una clase que recorre el grupo de boletas y verifica que no se dupliquen.
+HasNext? for iterator, comparar todas la boletas con la que se crea.
+Para que usar el iterator? la clase.. no necesito.
+
+
+3, 6, 7, 8
+2, 4, 5, 6
