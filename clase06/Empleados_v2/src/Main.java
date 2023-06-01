@@ -42,7 +42,7 @@ public class Main {
             }
 
         }
-/*
+
         //cantidad de empleado por cada tipo
         //Cantidad de vendedores que cobran presentismo
         //Empleados que cobren más de 200000
@@ -70,7 +70,7 @@ public class Main {
 
         //Promedio
         //55674 saldo sin descuentos o con presentismos
-        System.out.println("Promedio: "+ lista1.promedioDeSueldos());*/
+        System.out.println("Promedio: "+ lista1.promedioDeSueldos());
         
 
     }

@@ -2,11 +2,10 @@ import org.w3c.dom.ls.LSOutput;
 
 import java.util.Arrays;
 
-<<<<<<< HEAD
-public class Persona {
-=======
+
+
 public class Persona implements Comparable{
->>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
+
 
     private int documento, edad;
 
@@ -69,21 +68,19 @@ public class Persona implements Comparable{
     @Override
     public int compareTo(Object o) {
         Persona p = (Persona) o;
-<<<<<<< HEAD
-=======
+
         return this.nombre.compareTo(p.nombre);
     }*/
 
     @Override
     public int compareTo(Object o) {
         Persona p = (Persona) o;
->>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
         int a= this.getApellido().compareTo(p.getApellido());
         if(a==0)
         {return this.getNombre().compareTo(p.getNombre());}
         return this.getApellido().compareTo(p.getApellido());
-<<<<<<< HEAD
-    }*/
+
+    }
     /*
     public int compare(Persona p1, Persona p2)
     {
@@ -93,12 +90,10 @@ public class Persona implements Comparable{
     public int compareTo(Persona o) {
         return this.getNombre().compareTo(o.getNombre());
     }*/
-=======
     }
 
     public String getApellidoYnombre(){
         return apellido + " "+ nombre;
     }
 
->>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
 }

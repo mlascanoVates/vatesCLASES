@@ -33,10 +33,9 @@ public class Main {
         System.out.println(apellidosQueCoinciden);
 
 */
-<<<<<<< HEAD
+
         /*
-=======
->>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
+
         Persona[] conjuntoNuevo= new Persona[conjunto.getListaPersonas().size()]   ;
 
         //VER METODO Y COMO ESCRIBIRLO MEJOR
@@ -52,7 +51,6 @@ public class Main {
         System.out.println("Se imprime lista ordenada");
         for (Persona e: conjuntoNuevo){
             System.out.println(e);
-<<<<<<< HEAD
         }*/
 
 
@@ -66,11 +64,10 @@ public class Main {
         }
 
 
-=======
+
         }
 
 
 
->>>>>>> a6a9103b9daa421acfe10629e826b63dd0e64e4e
     }
 }

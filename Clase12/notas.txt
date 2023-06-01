@@ -1,0 +1,75 @@
+clase 12,
+API OPCIONALES
+OPERADOR . (PUNTO), envio de mjes
+se obtiene un NULLPOINTER
+se requiere iff
+
+OPTIONAL<T> permite que una referencia esté vacía.
+
+La instancia tiene métodos que funcionan cuando tenemos un objeto NULO.
+Si está vacio, hay valores por defecto
+
+método
+orELSE	
+
+CUANDO SE USA PROGRAMACION FUNCIONAL, SE NECESITA RESOLVER TODO SIN ESTRUCTURAS DE CONTROL
+ni while, ni for, ni if
+
+FLUJOS
+OPERACIONES FINALES: junta todos los datos que cayeron
+
+OPERACIONES INTERMEDIA: x cada dato que cae, le hace algo , devuelve y lo deja.
+procesa cada dato que pasa x la caida, y deja que pasa.
+Para que dps pueda venir otra operaciones intermedia, que quizas devuelven datos indefentes.
+
+
+cada dato para por intermedia y termina con una operacion terminal
+
+
+REFERENCIA A METODO
+Funcion
+que recibe un parametro de un mismo dato y manda un parametro igual
+
+eL METODO tiene una interfaz, que puede intreprestar
+
+
+FILTER
+PREDICADo. 
+
+
+operacion intermedia:
+MAP
+recibe una interface FUNCTION, recibe un dato, y devuelv e otro pio..
+
+
+REPETICION DE FUNCIONES	
+
+Con map, podemos trer una lista de empleados y que slaga un suelo. praer un lfoa.
+
+
+mapToInt -> devuelve un objeto que tiene metodos especiales para aplicar a enteros
+
+
+AVERIGUAR FACTORY MÉTODO
+
+
+viendo la clase correo
+vemos metodo
+contador cuantos correos por provincia
+cantidad por provincia, como hacerlo con FLUJOS
+
+
+VER API STREAM
+VER MPETODO COLLECT
+
+
+AVERIGUAR entrySET
+
+El profe queria hacer un mapa de string a contadores y de contadores a interger
+
+REESCRIBIR QUINI6
+O EL TP
+
+TAREA
+reescribir quini6
+INVESTIGAR métodos: anyMatch, AllMatch, noneMatch, y ver si pueden ser aplicables

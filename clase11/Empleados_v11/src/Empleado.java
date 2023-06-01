@@ -1,26 +1,29 @@
 import java.util.ArrayList;
 
-public abstract class Empleado implements Comparable {
+public abstract class Empleado {
     protected double sueldo;
     protected String nombre;
+
+
     protected int legajo;
 
-    protected ArrayList<Empleado> listaEmpleados;
 
     public Empleado( int legajo, String nombre, double sueldo) {
         this.legajo=legajo;
         this.nombre=nombre;
         this.sueldo = sueldo;
-        listaEmpleados= new ArrayList<>();
+
     }
 
-    public ArrayList<Empleado> getListaEmpleados() {
-        return listaEmpleados;
+
+    public int getLegajo() {
+        return legajo;
     }
 
-    public void setEmpleado(Empleado e) {
-        listaEmpleados.add(e);
+    public void setLegajo(int legajo) {
+        this.legajo = legajo;
     }
+
 
 
     public String getNombre() {
@@ -44,13 +47,13 @@ public abstract class Empleado implements Comparable {
     public abstract double getSueldoDelMes();
 
 
-
+/*
     public void imprimirTodosLosSueldos(){
         for (Empleado e: listaEmpleados){
             System.out.printf("%15s %15f", e.getNombre(), e.getSueldoDelMes());
         }
     }
-
+*/
     public double sumarSueldos(ArrayList<Empleado> Empleados){
         double sumar=0;
         for (Empleado e: Empleados){
@@ -61,15 +64,16 @@ public abstract class Empleado implements Comparable {
         return sumar;
     }
 
-    @Override
-    public int compareTo(Object o) {
-        Empleado emp = (Empleado)o;
-        return this.nombre.compareTo(emp.nombre);
-    }
-
     public String toString() {
         return "nombre= " + String.format("%30s", nombre) +
-                ", sueldo= " + getSueldoDelMes() ;
+                ", sueldo= " + String.format("%15.2f", getSueldoDelMes()) ;
     }
+/*
+    @Override
+    public int compareTo(Empleado o){
+
+    return (int)(this.getSueldoDelMes()- o.getSueldoDelMes());
+    }
+*/
 
 }

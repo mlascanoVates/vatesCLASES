@@ -2,7 +2,6 @@ public class Obrero extends Empleado {
     int diasTrabajados;
     int legajo;
 
-
     double porcentajeTrabajado;
 
 
@@ -42,7 +41,9 @@ public class Obrero extends Empleado {
         return "Obrero{" +
                 super.toString()+ " "+
                 ", diasTrabajados= " + diasTrabajados +
-                ", porcentajeTrabajado= " + porcentajeTrabajado;
+                ", porcentajeTrabajado= " + porcentajeTrabajado +
+                ", sueldo= " + sueldo +
+                '}';
     }
 
 

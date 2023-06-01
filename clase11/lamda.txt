@@ -1,0 +1,8 @@
+for each
+esperan interfaz de tipo consumer
+
+
+RUNABLE .
+para menu con varias opciones
+
+en este caso mejor opcion runable
