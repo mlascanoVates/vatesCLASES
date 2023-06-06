@@ -1,0 +1,57 @@
+metodos:
+
+peek
+limit
+skip
+
+**reduce(BinaryOperator)**
+recorre todo el flujo haciendo que se repita la operación con todos los elementos
+ejmplo queremos sumar el arreglo
+suma los dos primeros, guarda, al resultado le suma al siguiente.
+Se puede comparar e ir quedando con los resultados intermedios
+-Tiene una sobrecarga con el valor inicial, es decir tiene un método que podemos indicarle valor inicial para comparar
+
+**AllMatch
+**AnyMatch
+**NoneMatch
+
+entrega Booleano
+si todos son de tal valor
+si alguno es de tal valor
+si ninguno es de tal valor
+
+
+NUMEROS ALEATORIOS:
+la clases de flujos tiene metodo que devuelve flujo de enteros
+
+Random r= new Random();
+r.ints(1000, -10000,10000).collect(Collectior)
+intStream
+TAMAÑO // VALOR MIN // VALOR MAX 
+
+si tenemos STREAM OF PRIMITIVES
+ints -> no devuelve un flujo de INTEGER sino de variables primitivas, por lo que los tengo que envoler.
+longs
+doubles
+
+clase BOXED
+To convert from a stream of primitives to a stream of objects
+
+funcion 
+MAPTOINT
+MAPTODOUBLE
+
+ORELSE
+
+MAP -> adentro ponemos programación funcional
+
+get()
+getAsDouble()
+la sentencia devuelve el valor en doble
+
+
+.sorted(Comparator.reverseOrder())
+
+Consumer<Objetct> imprimir= sout
+//devuelve la funcion sout
+//variable tipo función que apunta a otra
