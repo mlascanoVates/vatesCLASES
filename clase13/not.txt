@@ -1,0 +1,29 @@
+flujo de enteros primitivos
+
+Metodo TOLIST	
+METODO 
+random.ints (int de strings)
+
+
+NONEMACH, que no tenga
+
+COLLECT A UN FLUJO
+Recibe objetos: colector, bi consumer.
+Hace ACUMULACIONES en un flujo
+
+groupingBy de conjunto de datos
+
+Agrupo y metio en un grupo
+
+PARTICIONING,
+divide con predicks
+
+
+HACER ESTO CON LAS LINEAS DE UN ARCHVO
+O Cib loewsm
+
+LIBRERIA QUE PERMITE LEERlinea x linea -READ 
+
+TAREA DEL DIA
+Agarrar el tp1 y reescribir con funcional
+Hacerla de manera declarativa
