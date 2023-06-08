@@ -1,0 +1,64 @@
+Diagrama de estados es mejor para representar cuales son las transiciones
+
+Diagrama de estado
+Diagrama de flujo(Actividad)
+
+
+Diagrama de secuencia
+No se suele hacer tan genérico
+sino entre tal y tal clase
+
+Por ejemplo INTERACCIÓN
+muevo una pieza y llego a la otra punta, notifico al escoring(estadísticas)
+
+ESTADÍSTICAS
+DEFINIR EN QUÉ MOMENTO SE SUMAN PUNTOS EN EL JUEGO
+contabilizar cantidad de movimientos:
+*movmientos adyacentes
+*salt0s
+*salto con espacios
+*saltos por turno
+*saltos y turnos tomados
+
+*primer puesto 5000puntos
+*2do 2500
+*3ero 1000
+*4to 500
+*5to 0 puntos
+
+*10 puntos por cada ficha que llega al otro extremo.
+
+
+
+
+
+
+REQUERIMIENTOS
+Compatibilidad: donde tiene que correr, como, qué clase de compatibilidad.
+App de escritorio: debe ser compatible con linux ubuntu de licencia 4 en adelante, windows xp en adelante por tal razón.
+
+
+
+
+HISTORIA DE USUARIO, CON los criterios de aceptación de esa historia de usuario
+
+
+Sergio lo puso como se redactan las historias de usuario
+
+TEMPLATE
+COMO QUIERO Y PARA
+
+Criterio de aceptación
+Se considera acptado en estas condiciones
+Se va a aceptar en estas condiciones
+Restricciones de requerimientos
+
+
+Y LUEGO LOS REQUERIMIENTOS FUNCIONALES
+
+No solo poner requerimientos no funcionales, y tmb como lo vamos a testear.
+
+Ejemplo, tantos 10mil  usuarios de manera concurrente, con test de carga
+
+
+

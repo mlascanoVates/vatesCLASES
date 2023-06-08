@@ -1,0 +1,35 @@
+title  DAMAS CHINAS
+
+participant Sistema
+participant Jugador N°1
+participant Jugador N°2
+participant Jugador N°n
+
+
+Sistema->Jugador N°1:Registrarse. Seleccionar numero de jugadores y modalidad.
+Sistema<--Jugador N°1:Nick de usuario. Numero de jugadores y color
+
+Sistema->Jugador N°2:Registrarse.
+Sistema<--Jugador N°2:Nick de usuario y color
+
+Sistema->Jugador N°n:Registrarse.
+Sistema<--Jugador N°n:Nick de usuario y color
+
+Sistema->Jugador N°1: Turno. Definir un movimiento
+Sistema<--Jugador N°1: Movimiento de una ficha.
+
+Sistema->Sistema: ¿Es valido este movimiento?
+Sistema->Sistema: reordenar tablero.
+
+Sistema->Jugador N°2: Turno. Definir un movimiento
+Sistema<--Jugador N°2: Movimiento de una ficha.
+
+Sistema->Sistema: ¿Es valido este movimiento?
+Sistema->Sistema: reordenar tablero.
+
+Sistema->Jugador N°n: Turno. Definir un movimiento
+Sistema<--Jugador N°n: Movimiento de una ficha.
+
+Sistema->Sistema: ¿Es valido este movimiento?
+Sistema->Sistema: reordenar tablero.
+

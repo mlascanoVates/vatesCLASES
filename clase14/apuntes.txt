@@ -1,0 +1,14 @@
+biblioteca.estados.entrySet().stream.map().collect(collectors.joining())
+
+entrySet
+recorre todas las entradas del mapa, los pares
+
+por cada par se mapea, generando una cadena nueva,
+
+devuelve un string de cadena, que puede unirse con cadenas entre medio /n
+
+
+
+joining puede tener mas parametro, indicando que primero a dps
+
+METODO SUM

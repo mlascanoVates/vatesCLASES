@@ -1,0 +1,66 @@
+SISTEMAS REACTIVOS
+PROGRAMACIÓN REACTIVA
+
+PATRÓN DE ARQUITECTURA
+MODELO VISTA
+VISTA MODELO
+
+MICROFRONTED
+
+
+******
+CAP 17 Y 18
+17.3.4
+
+SISTEMAS REACTIVOS vs PROGRAMACION REACTIVA
+
+SISTEMAS REACTIVOS
+Manifiesto
+Bajo Acoplamiento
+
+*ENFOQUE ORIENTADO A MENSAJE
+Bajo acomplamiento
+Cada parte aislada
+
+para que el
+*SISTEMA RESPONSIVO
+Responde en tiempo rapido y consistente
+Mejora UTILIDAD Y USABILIDAD
+
+*SISTEMA ELÁSTICO
+Se mantiene responsivo a pesar que cargue trabajo.
+Mucha carga de datos, muchas conexiones.
+AUTOSCALING
+
+*RESILIENCIA
+Propiedad física, volver a la forma original
+Manejar fallo sin comprometer el TODO
+
+--SISTEMA MANTENIBLE: 
+cada nueva actualización, que tenga mínimo impacto
+--EXTENSIBLE
+que no muera
+
+
+*******
+PROGRAMACIÓN FUNCIONAL REACTIVA
+Es un paradigma: conjunto de creencias sobre un tema
+ENFOQUE DECLARATIVO
+
+*******
+Patrón: PUBLISHER - SUBSCRIBER
+PUBLICADOR - SUSCRIPTOR
+se suscribe y desuscribe un SUSCRIPTOR
+de fondo tenemos un PATRON OBSERVER
+*******
+
+Concepto PROGRAMACIÓN REACTIVA
+
+Reacción en cadena
+Cada ATOMO pasa un mensaje a otros, y van reaccionando.
+Mensajes ASINCRÓNICOS que se envian Y ENTIDADES que REACCIONAN a esos mensajes
+
+*******
+VENTAJAS
+BAJO ACOPLAMIENTO
+MODULARIDAD

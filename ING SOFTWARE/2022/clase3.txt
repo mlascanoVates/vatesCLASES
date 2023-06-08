@@ -1,0 +1,100 @@
+Sprint Backlog
+
+PO- 
+Definir objetivo de cada sprint en el comienzo de cada sprint
+Define los requerimientos, responsable hacia donde vamos
+
+scrum Y Metodologia AGILES
+
+En una retri NO SE HABLA DEL PRODUCTO
+
+
+UNA SEMANA REFI (refinar), UNA SEMANA PLANNING
+
+guia de SCRUM 2020
+
+
+DUAL TRACk AGILE - otra metodología
+tiene 2 JIRA
+uno para discovery:  experiencia de usuario, objetivos sobre el producto a lanzar, producto
+uno para development: trabaja IT 
+
+
+TP1
+Los 3 primeros pueden ser GITHUB
+el 3 JIRA
+
+4 Carpetas en las que esta dividido el proyecto, imagenes, etc
+5 Normas de etiquetado
+como van a denominar
+Por ejemplo si hay ramas
+Realice
+Que es una feature
+el versionado; SEMVER.org versionado semántico
+USA 3 numeros
+mayor, mainor, patch
+100
+200 no es compatible
+11 a 12 , tiene que tener compatibilidad
+Patch: correccion pequeño cambio.
+back fixis, ej cambio estetico.
+
+
+Camel case, nombre_ etc..
+Politica 
+https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/
+
+Convenciones de nomenclatura: Camel, Pascal, Kebab y Snake case
+
+Realice por ramas o tag.
+Cada vez que tiremos un Tag, disparador. 20.04hs
+
+Tags, identifican commit en particular
+
+6
+7
+Fusion de archivos: Ramas de master, develop, realease.
+Clonamos, desarrollamos, dps fusionamos.
+Como hacemos cuando hay conflicto?
+Hacer un stage?
+POLITICA DE EJECUCION.
+code review, se revisa el codigo, y dan el aprovado los diferentes desarrolladores.
+Se va a revisar el codigo y ejmplo tanta gente apruebe los cambios, ahi se hace merge.
+
+
+
+Etiquetado de acuerdo al progreso
+8
+Que es releases,
+Es el producto final que se despliega en producción, se supone lo tenes listo al final del sprint
+Version de codigo que se entrega.
+Lanzamiento de una version.
+Tmb puede ser un trabajo final.
+Cada vez que subo a la store es un release.
+
+Como se puede predefinir el realease.
+
+9 Ceremonia de Scrum y roles
+Scrum Master- responsable coordinar ceremonia, que tecnicas se usa en la retro (barco con el ancla), que se haga la retro, el tema del Jira
+PO- encargado de interactuar con los profesores, test holder
+
+Planing Realise, Retro, Review.
+LA materia GESTION DE CALIDAD se continua estos temas
+
+
+-----
+
+GRUPOS TEMAS
+
+MANDAR MAIL con los integrantes
+podemos hacer meet mañana
+5 tarde
+Traer dudas
+
+Primer entrega:
+Hasta el jueves prox semana.
+1er entrega por mail
+Cada representante manda mail
+
+NOMBRE, MATRICULA, MAIL
+y la idea

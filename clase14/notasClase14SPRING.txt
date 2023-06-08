@@ -1,0 +1,162 @@
+MOBILE:
+
+APLICACION NATIVA
+APLICACION WEB
+
+
+Aplicaciones con interfaz web:
+Se crea todo los que es interaccion final con programa escrito en JAVASCRIPT que corre en navegador
+y accede a los recursos compartidos solo para validad datos.
+CPU cliente: calculos en la cpu cliente
+recursos compartidos: base de datos en un servidor
+
+COMO ME COMUNICO CON DOS PROGRAMAS
+QUE GENERALMENTE TIENEN LENGUAJES DIFERENTES Y PUEDEN CORRER DIFERENTES MÁQUINAS
+FRONT Y BACK
+
+Hoy por hoy 
+PROTOCOLO WEB: http
+se reutiliza, para transferir datos en ambas direccion (ya no peticiones de paginas), sino ver DATOS
+
+PROTOCOLO HTTP
+Tiene instrucciones
+
+URI nombre del recurso en INTERNET
+
+comando representado como VERBOS
+
+cada accion: VERBO, URI sobre la que el cliente quiere aplicar una accion
+
+VERBOS:
+GET
+POST
+PUT: hay que mandar el identificador del objeto a modificar
+PATCH: modifica parcialmente
+DELETE: elimina recurso
+
+API REST:
+Reinterpretar los VERBOS HTTP con nvos significados.
+
+SEGURIDAD
+Tenemos de los 5 verbos: seguros y no seguros
+Significa NO importa cuantas veces se ejecute el verbo, no se modifica el estado del recurso. (ej: GET)
+El servidor tiene que ser responsable que los datos que se ingresa no se modifican.
+
+IDEMPOTENCIA
+Aplica para los verbos NO SEGUROS:
+los cuales se clasifican en Idempotene o No Idempotente
+
+Invocados multiples veces, Pero se modifica 1 vez no más.
+
+NO SON IDEMPOTENTES: POST y PATCH
+
+se debe garantizar IDEMPOTENCIA: PUT y DELETE, GET
+
+---
+Cuando se hace una accion (se cayo la red o se demora) y el cliente no visualiza, si es IDEMPOTENTE, el cliente puede hacerlo tranquilo porque no va a tener consecuencias secundarias.
+
+Se espera que al programar la lógica el servidor respete los dos CONCEPTOS
+
+
+----
+LIBRERIAS 
+quiero levantar servidor HTTP que junte peticiones.
+
+BACKEND
+No tiene orden
+se programa x separado cada endPoint que escucha PETICIONES
+
+JAVA
+Tiene un conjunto de clases
+
+SPRING BOOT
+una biblioteca que no es de las por defecto de JAVA
+de las más usadas.
+Podes CONFIGURAR MUCHAS COSAS
+Trae configuraciones PRE DEFINIDAS
+ 
+SPRING BOOT, provee proyectos preconfigurados
+
+-----
+Proyecto Inicial
+PAGINA CONFIGURA
+SPRING INITIALIZR
+
+*Gestor de proyectos: no usamos el de intellij
+Usamos uno genérico
+MAVEN, conocido para gestionar proyectos de java.
+Hacer empaquetado
+Correr testing
+
+*EMPAQUETADO
+jar o war
+cuando se compila tenemos muchos archivos .class.
+Jar es lo más parecido a un ejecutable, tiene todo un servidor web completo para ejecutar
+War es el ejecutable para la web
+
+*PROJECT METADATA
+Grupo+Artefacto
+Group: empresa
+Artefacto: clase1(NOMBRE DEL PRODUCTO)
+Name: clase1
+Packaegname: no debería repetirse nunca, puede ser una libreria NOMBRE UNICO
+
+DEPENDENCIAS:
+Librerias que vamos a enunciar
+
+---
+ej hacer un api rest
+DEPENDENCIA: SPRING WEB
+--
+EJ CONEXION BASE DE DATO
+MySQL Driver
+o Oracle Driver
+--
+lombok una bien conocida
+
+Luego GENERATE
+.ZIP
+
+------
+Cambian el nombre de las carpetas
+SRC 
+Para codigos
+Main
+Lo que programamos
+	Java: archivos java
+	resources: archivos de texto, ej	
+Test
+Programamos las pruebas
+
+
+Archivo TOMCAT
+EN PUERTO 8080
+
+-----
+ENDPOINT programar en clases CONTROLLERS
+
+el metodo que creamos debe ejecutarse con un ENDPOINT
+ej: cuando se reciba una petición GET "/"
+
+notacion
+@GetMapping("/")
+antes del método
+
+----
+ej
+Hacemos lista que devuelva enteros al azar
+
+@GetMapping("/random")
+public IntStream random(){
+return new Random.inst(100,1,1000);
+
+JSON
+sintaxis para representar objetos independientemente del lenguaje
+proviene de JAVASCRIP
+javaScriptObjectN
+
+
+AGARRAR EL OBJETO-> convertirla en una cadena con este formato -> luego se puede reconvertir en otro formato
+
+
+

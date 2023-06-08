@@ -1,0 +1,183 @@
+Clase 16-03-23
+ING SOFT
+
+metodologías de desarrollo
+Modelo Agile
+
+Realise, Roces y Configuration Managment.
+
+CAP2, CAP3 Y CAP25
+
+CAP 2, Desarrollo basados en un plan
+CAP 3, Metodologías Agile: scrum, kamban, slandam.., 
+CAP 25, Conf Managment
+
+Herramienta cuadrante de autonomía o desarrollo
+
+Equipos ALINEADOS Y AUTONOMIA, cuadro
+
+-----
+MODELOS TRADICIONALES
+-WaterFull, o modelo cascasa
+ Requerimiento / Diseño / implementacion y testing/ integración y testing/ operaciones y mantenimiento,
+Hace que los proyectos sean largos, a medida que avance podia cambiar los requerimientos, y segun este tipo de modelo, no se comenzaba la siguiente etapa, hasta terminar con la anterior.
+
+MODELOS INCREMENTALES  
+Descripcion algo detallada
+Se creaban grupos que armaban las especificaciones.
+
+DESARROLLO DE SOFTWARE AGILE (CAP3)
+Desarrollo basado en plan
+Un equipo que trabaja en generar los requerimientos, 
+Luego los requerimientos de especificación (ISO, EEE)
+Diseño e implementación
+->Podia haber solicitudes de cambios de requerimientos, de forma excepcional.
+ 
+AGILE MANIFESTO
+Principios:
+*Favorece a los individuos e interacciones sobre los procesos y herramientas.
+*Es más valorable el SOFTWARE FUNCIONANDO, sobre documentación excesiva.
+*Colaboración del cliente, hacerlo parte del proyecto por sobre una negociación contractual
+*Adaptarse y reaccionar a los cambios, por sobre seguir un plan.
+ 
+metodología Agile más difundida
+SCRUM
+Ken Schwaber, Mike, Jeff, hicieron una GUÍA
+scrumguide.org
+Quiere indicar como el rugby donde todo el equipo empuja.
+
+SCRUM es un esquema de trabajo, un marco de trabajo liviano, es un FRAMEWORK.
+Teams que GENERAN VALOR.
+El foco es generar valor, a partir de soluciones adaptativas a problemas complejos.
+
+VALORES
+*Compromiso
+*Foco
+*Franqueza
+*Respeto
+*Coraje (cuando algo no se pone en juego, tener el valor de hacer cambios que generen valor)
+
+Scrum descansa en roles, artefactos y eventos o ceremonias.
+foco principaal SPRINT
+SPRINT: Slots de tiempo determinado.
+Tiempo fijo, no muta en el desarrollo.
+-Los Sprint duran entre 2 y 4 semanas como máximo.
+en desarrollo de softwsare es raro que alcance las 4 semanas.
+
+EQUIPOS DE SRUM
+ROLES: (Guia 2020)https://drive.google.com/file/d/1jcFOZ1yCIXR0APW0a8FcxLaxD9yB0Zcm/view
+**SCRUM MASTER
+Es un rol que vela por todo el desarrollo del SCRUM, velar que se cumplan las ceremonias, eventos, que se cumplan los artefactos, los acuerdos, puede ser parte del equipo de desarrollo.
+Es como un couch, que controla que funcione el ecosistema sprint
+Puede ser el Tecnical Lider.
+**PO, Product Owner, 
+Gente de negocio o alún representante de StakeHolder, es UNA persona.
+Define el objetivo del producto, tiene  la responsabilidad de Priorizar lo que ingresa en Product Backlog.
+Objetivo, generar BackLog, generar actividad por hacer.
+PBI (Produc Backlog Items), debe organizar y darle prioridades a los items del Product BacKlog. 
+El PO puede pedir la cancelación del Sprint.
+Propone el objetivo del Sprint.
+Es el encargado de bajar los requerimientos del cliente.
+Es el representante de los StakeHolders.
+Redacta las historias de Usuarios(Requisitos de usuario) y los criterios de aceptación..
+**EQUIPO DE DESARROLLO
+En el equipo de desarrollo no hay jerarquia, todos están al mismo nivel.
+Todo el equipo debe ser suficiente para atacar a lo que se propone hacer, todo el equipo debe ser funcional a la lista de lo que se desa hacer.
+
+ARTEFACTOS:
+*Product backlow, lista de cosas por hacer, se define el objetivo que va a tener el equipo y hacia donde se va.
+Sprint backlow, lo que vamos a sacar en c/u de los Sprint. Aquí se hace el SPRINT PLANING
+*Foco principal. generar incremento, está de acuerdo con la definición de DONE.
+Nos propone el SCRUM, que al final del SPRINT agreguemos valor,
+el incremento está relacionado con una nva release, una nueva versión de software, o lo que se hayan propuesto como objetivo.
+
+
+SPRINT
+1-Planificación del Sprint,  es una ceremonia concreta. (SPRINT PLANNING)
+Es una ceremonia que se da al inicio del Sprint.
+Para un Sprint de 4 semanas, dura 8 hs.
+Para 2, unas 3hs.
+La Planificación del Sprint.
+Participa todo el equipo de SCRUM.
+Consiste en tomar los Items que hay en el product Backlow.
+Y se pasan tareas al Sprint Backlow, en función de lo que dice el equipo.
+Hasta que todo el equipo cuenta con tareas suficientes para comenzar el SPRINT.
+Se cierra la planing con el objetivo del Sprint listo.
+
+2-Sprint Backlow 
+Pasa un dia del sprint y se hace el Scrum Daily.
+SCRUM DAILY (suele participar el equipo de desarrollo, pero tmb en conveniente que participe el PO, o gente de producto como escucha )
+Es una ceremonia, un evento que dura 15min.
+Es un espacio donde el equipo de desarrollo, parados, para ser dinámicos.
+Se informa que problemas huvo, limitantes que se tiene, que se estuvo haciendo y que se va a hacer.
+Había 3 preguntas obligatorias(eliminado en 2020)
+-Que se hizo ayer
+-Que se va a hacer hoy
+-Que es impedimentos tenés
+Ahi donde el SCRUM MASTER puede actuar, sacar los bloqueantes para que el team pueda ejecutar su tarea.
+
+FINALIZA EL SPRINT
+
+3- Se entrega al INCREMENTO
+y se lo expone.
+Se hace una nueva ceremonia, al final del Sprint
+SPRINT REVIEW
+Una revisión (tmb llamada DEMO, REVIEW)
+El evento o ceremonia, consiste en mostrar a todo el equipo SCRUM, a veces se llama a gente de producción, de negocio, otros StakeHolder.
+Se presenta una DEMO, hacer una presentación, mostrar avances.
+Mostramos las evidencias, generalmente equipo de QA.
+a traves de Video, etc.
+En caso de 4 semanas de Sprint 4 hs.
+En caso de 2 semanas, 2 hs.
+Foco: mostrar lo que se hizo, el incremento, la propuesta de valor.
+No se hace feedback. solo se muestra que resultados se obtuvieron.
+
+4- SPRING RESTROPECTIVE, la restrospectiva del sprint
+CEREMONIA FINAL
+3h, en 4 semanas
+2h, en 2 semanas
+Hacemos feedback, hay distintos técnicos.
+Se ve que se hicieron mal, que se hicieron bien, que se puede mantener y qué mejorar, que se puede dejar de hace, participo todo el equipo, incluse el PO.
+Puede para que la descripción de requerimientos fuere ambiguas, no estaban todas las pruebas, etc, no estaba claro lo que dijeron desde desarrollo UX.
+Hay varias técnicas para hacerla.
+
+Luego de aqui se vuelve a INICIAR, con la planning., proximo SPRINT
+
+es como un couch, que controla que funcione el ecosistema sprint.
+
+
+***Product Backlow
+Aqui se ponen todas las cosas que se necesitan construir hacia adelante, están todas las historias. (Ingresa al Sprint)
+***Increment
+(lo que sale)
+
+-------
+Metodología 
+KANBAN
+Desarrolla para la gestión de equipos que estan producción
+Foco: minimizar desperdicios y ser concientes con desperdicios.
+No es Iterativo como SCRUM.
+Trata de ver donde están los CUELLOS DE BOTELLA, para poder minimizarlos.
+Historia: Se da en el contexto donde se tenía un JUST IN TIME, era el contexto de la época, de no almacenar,  0 desperdicio.
+Se popularizan los tableros de Kanban.
+
+
+TABLERO DE KANBAN(Kanban board)
+Tableros con postit, en cada sector.
+Los equipos colocaba los postit, para indicar como iban.
+Asi se podía detectar los cuellos de botella.
+
+Tablero con 3 columnas
+-TO DO (para hacer)
+-IN PROGRESS
+-DONE (listo)
+
+El aporte de Kanban es establecer el workingProgress Limit (límite en el proceso de trabajo).
+Establece el máximo de etiqueta en las columnas.
+*El concepto es NO hacer multitares.
+Se pierde un 20% cada vez que se cambia de tarea.
+
+
+
+
+

@@ -1,0 +1,57 @@
+Clase 18 de mayo
+
+PATRON DE ARQUITECTURA VS PATRONES DE DISEÑO
+
+ARQUITECTURA
+Organización de componentes
+
+DISEÑO
+Reutilización, en la fácil comprensión
+Soluciones comunes, a problemas comunes
+
+********
+PATRONES:
+*OBSERVER
+*STRATEGY
+*SINGLETON
+
+********
+Base en la Programación Orientada a objetos
+Basses POO
+Principios POO
+
+STRATEGY
+Una sola instancia por clase
+
+OBSERVER
+como puedo notificar a los observadores
+
+STRATEGY
+Patrón COMPORTAMENTAL, CONDUCTUAL
+cambiar el comportamiento en tiempo de ejecución
+
+rombo vacio: AGREGACIÓN
+El contexto TIENE una estrategia(tiene asociado una INTERFAZ, y hay distintas clases que implementa la interfaz
+ENCAPSULAMOS CONDUCTAS, no sabemos que contiene el código
+En tiempo de composición podemos cambiar el comportamiento, de manera desacoplada, con el mínimo impacto.
+La forma, a través de INTERFAZ.
+Obligamos a que las clases IMPLEMENTEN EL COMPORTAMIENTO.
+COMPOSICION HERENCIA IMPLEMENTACION
+Algoritmos intercambiables
+
+
+******
+OBSERVER
+Patrón CONDUCTUAL, de comportamiento
+Sujeto emite señales, y tenemos observadores que reciben las notificaciones.
+El sujeto propaga a todos los que están suscriptos la información que recibe.
+
+******
+SINGLETON
+Patron CREACIONAL
+Intenta resolver que haya una sola instancia de un determinado objeto
+cREA UNA INSTANCIA SI NO EXISTE
+Y se asegura que sea única
+
+******
+PROGRAMACION REACTIVA Y SISTEMAS REACTIVOS PROX CLASE

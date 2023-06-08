@@ -1,0 +1,17 @@
+TP PRÁCTICO
+
+Código a desarrollar sea con UNIT TEST
+si se logra automatizar los test
+Sistem test e Inteligent test tmb suma.
+No solo desarrollar sino tmb automatizar.
+
+
+
+DIAGRAMA DE USO
+Elegir jugadores
+Elegir computador o Multijugador
+Ver estadísticas
+Mover ficha
+
+
+DIAGRAMA DE ACTIVIDADES

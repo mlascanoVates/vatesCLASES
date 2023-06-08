@@ -1,0 +1,35 @@
+---
+tp2
+
+solo API DE COLECCIONES Y API DE FLUOS
+
+MUNICIPALIDAD
+Deudas->Planes de pagos para contribuyentes
+Todo lo que
+todos los meses se paga una cuota
+sistema de cobro registra: numero plan de pago, 
+
+Leemos 2 archivos
+Todos los planes de pagos: numero, nombre contribuyente, cantidad, canti cuotas
+
+PAGOS:
+numero de pago, numero de plan, y cantidad de dia de demoras
+
+DPS DE ESTO CALCULAMOS TODO EL RESTO
+
+Reportes aplicando stream
+MENU: VECTOR RUNNABLE O SUPLIER DE STREAM CON LOS RESULTADO
+
+Evitar estructura de control
+
+PARA VER SI EL PLAN ESTA CANCELADO:
+PREDICATE(puede ser un metodo)
+CANTIDAD DE CUOTAS CON tamañano de cuotas pagadas
+
+CLASE PLAN
+NUMERO, NOMBRE, MONTO, CUOTA PACTADA
+LISTA DE PAGOS
+
+CLASE PAGOS
+Cuota paga
+
