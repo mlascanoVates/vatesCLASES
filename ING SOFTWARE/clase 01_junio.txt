@@ -64,3 +64,7 @@ Mensajes ASINCRÓNICOS que se envian Y ENTIDADES que REACCIONAN a esos mensajes
 VENTAJAS
 BAJO ACOPLAMIENTO
 MODULARIDAD
+
+***
+REACT REDUCE
+Cambia una accion. cambia estado, pero no modifica
