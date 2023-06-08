@@ -1,7 +1,0 @@
-ING SOFTWARE
-
-Se estudia para no cometer errores
-Prácticas que se usan para no cometer errores.
-No sólo es como escribir código sino como se encara un proyecto.
-
-15min
