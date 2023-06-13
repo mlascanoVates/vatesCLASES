@@ -1,0 +1,52 @@
+MUNICIPALIDAD
+Contribuyentes
+Planes de Pagos -impuestos
+
+PLAN DE PAGOS
+idPlan
+nombreContribuyente
+totalDeuda
+cantidadCuotas
+cuotasPagas (lista)
+
+cada cuota:
+totalDeuda/cantidadCuotas (cantidad cuotas no debería ser nulo)
+
+PAGOS
+idPago
+idPlan
+diasDeMora
+
+InteresesPorMora: 0,5*montoCuota*diasDeMora
+
+METODOS:
+Importar archivos de textos:
+PLANES
+PAGOS
+
+INFORMAR:
+*Cantidad de planes pagados en su totalidad (es decir, que tengan tantos pagos recibidos como la cantidad de cuotas pactadas)
+*Sumatoria de las deudas registradas
+*Listado de todos los pagos efectuados por un contribuyente en particular
+*Promedio general de intereses adicionales cobrados
+
+USAR COLECCIONES Y FLUJOS
+
+MUNICIPALIDAD:
+*meotodo PLANES DE PAGOS, devuelve int
+*SUMATORIA DEUDAS REGISTRADAS: método REDUCE
+(se refiere a lo actual vencido?)
+
+PLANES DE PAGOS->CUOTA
+interesesCobrado()
+
+*interseccion MATCHEO
+nombre contribuyente con id PAGOS
+
+
+COMO HACER UN MAPA
+idPlan, datosDelPlan
+
+HashMAP
+HashSet
+TreeMap
