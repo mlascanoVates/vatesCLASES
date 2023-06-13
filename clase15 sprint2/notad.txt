@@ -1,0 +1,83 @@
+abm de numeros
+una api para agregar numeros de a uno
+
+endpoint para Consultar
+
+para poder llamar de afuera
+@getMappaing("/numeros")
+
+
+private Set<Integer> conjunto= new Random()
+.ints(20,1,100). boxed().collect(Collectors.toset());
+
+@getMapping("/numeros")
+public Set<Integer> consultarTodos(){
+retunr conjunto;
+
+TENER PARAMETROS DENTRO DE LA URI
+Funcion BUSCAR NUMERO:
+entonces necesitamos en la URI tenga el parámetro a buscar
+("numeros/{buscado}")
+/:buscado es un parámetro
+necesitamos llamar a @PathVariable coloar en el parámetro del metodo
+public booean buscar(@R int buscado )
+return conjunto.contains(buscado);
+
+
+
+
+@GetMapping("numeros/agregar/{nuevos}")
+
+///
+APLICAR FILTRO Y BUSCAR PARES
+.stream.filter()
+
+//problemas de usar navegador
+no podemos hacer mas que usar GET con navegador
+no sirve para usar todos los ENDPOINT que programe.
+LO CORRECTO AL HACER UNA API REST es devolver un CODIGO DE RESPUESTA
+Para cada posible numero, es un codigo, informacion
+200 pudo hacerlo
+404 no pudo
+
+Ahora vamos a programar devolviendo código de respuesta
+
+USAMOS
+APLICACION DE CLIENTES para invocar la accion que necesitamos
+RECIBIR CABECERAS(informacion extra)
+>>POSTMAN
+Permite grabar conjunto de peticiones, armamos una carpeta x proyecto: COLECCIONES
+En la coleccion guardamos todas las peticiones que probamos
+
+VENTAJAS:
+es posible utilizar todos los verbos del protocolo
+
+ahora agregar usamos PUT
+@PutMapping ("numeros/{nuevos}")
+public boolean agreagar()
+
+LOS ENDPOINT deben devolver codigo segun protocolo
+200 protocolo de PETICION SATISFACTORIA
+404 NotFound si no existe
+
+clase ResponseEstatus
+devulve ResponseEntity
+
+@GetMapping("/numeros/{buscado}")
+public ResponseEntity buscar2(@PathVariable int buscado){
+return (conjunto.contains(buscado))? ResponseEntity.ok.build() : ResponseEntity.notFound().build();
+ }
+
+BUSCAR EN RANGO
+numeros entre un minimo y máximo
+
+>>El objetivo de la URI ea ser clave primaria
+simbolo "'?" QUERY STREAM en la URI
+
+USAMOS @RequestParam en parámetros
+@GetMapping("/numeros/filtrados")
+public Stream<Integer>  buscarRango(@RequestParam )
+
+>> podemos en PARAMETRO agregar valor por defecto
+
+Los PARAMETROS DE BUSQUEDA SIEMPRE deberian ser opcionales
