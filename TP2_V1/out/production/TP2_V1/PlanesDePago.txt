@@ -1,0 +1,5 @@
+A0010;Sanchez Julián;340567;3
+A0020;Ledesma Sofía;1655322;6
+A0030;Guzman Raúl;567423;2
+A0040;Dominguez Lautaro;35678;3
+A0050;Gutierrez Mónica;246567;4

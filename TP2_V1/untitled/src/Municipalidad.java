@@ -65,7 +65,6 @@ public class Municipalidad {
 
 /*
 
-
         convertida.map(x->{
             
             String idPlan= result[];

@@ -41,6 +41,10 @@ public class Pago {
         return  0.005 * plan.importeCuota()*diasMora;
     }
 
+    public boolean tieneIntereses()
+    {
+        return interesesAdicionales()!=0;
+    }
 
     @Override
     public String toString() {

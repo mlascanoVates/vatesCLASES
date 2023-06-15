@@ -2,11 +2,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -15,7 +14,8 @@ public class Main {
 
 
         List<String > lectorPlanes= new ArrayList<>();
-        lectorPlanes= Files.readAllLines(Paths.get("PlanesDePago.txt")); //devuelve lista
+        lectorPlanes= Files.readAllLines(Paths.get("Recursos/PlanesDePago.txt"));
+        //devuelve lista
         //Files.lines devuelve String
         lectorPlanes.stream().forEach(x->municipio.obtenerPlan(x));
 
@@ -23,7 +23,7 @@ public class Main {
         //OPCION DECLARATIVA
      //   municipio.getPlanesDePago().stream().forEach(System.out::println);
 
-        lectorPlanes= Files.readAllLines(Paths.get("Pagos.txt"));
+        lectorPlanes= Files.readAllLines(Paths.get("Recursos/Pagos.txt"));
         lectorPlanes.stream().forEach(x->municipio.obtenerPagos(x));
        // municipio.getPagosContribuyentes().stream().forEach(System.out::println);
 
@@ -59,10 +59,14 @@ public class Main {
         System.out.println("SUMATORIA DE DEUDA: "+ suma);
 
         //3-Listado de todos los pagos efectuados por un contribuyente en particular
+        //Ver si tengo que agregar NUMERO DE CUOTA
         System.out.println("Ingresar Contribuyente por nombre");
         Scanner input= new Scanner(System.in);
         String nombre= input.nextLine().toUpperCase();
-        municipio.getPlanesDePago().stream().filter(x->x.getNombreContribuyente().equals(nombre)).forEach(System.out::println);
+        municipio.getPlanesDePago().stream().filter(x->x.getNombreContribuyente().equals(nombre)).map(x->x.getCuotasPagas()).forEach(System.out::println);
+
+        //Promedio general de intereses adicionales cobrados
+        Stream<ArrayList<Pago>> listaDePagos= municipio.getPlanesDePago().stream().map(x->x.getCuotasPagas());
 
     }
 }
