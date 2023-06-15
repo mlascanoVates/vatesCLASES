@@ -15,7 +15,8 @@ public class Main {
 
 
         List<String > lectorPlanes= new ArrayList<>();
-        lectorPlanes= Files.readAllLines(Paths.get("PlanesDePago.txt"));
+        lectorPlanes= Files.readAllLines(Paths.get("PlanesDePago.txt")); //devuelve lista
+        //Files.lines devuelve String
         lectorPlanes.stream().forEach(x->municipio.obtenerPlan(x));
 
 

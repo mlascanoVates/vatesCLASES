@@ -1,0 +1,5 @@
+menu sin swich
+menu hace con un mapa
+runnable, sin devolver, imprimir
+supplier para retornar
+

@@ -1,0 +1,81 @@
+personas
+apellido
+nombre
+edad
+
+clase
+personasController para guardar gatos
+
+
+DEJAMOS GUARDADO DATOS EN MEMORIA
+
+
+mapa Integer, Persona , (con un documento, obtengo Persona)
+
+Collection<Personas>
+
+Personas devuelve un JASON, lista de objetos
+
+
+public class Persona {    private int documento;    private String nombre;    private String apellido;    private int edad;
+
+
+getOrDefaul, si encuentra devuelva el codigo con la persona, sino encuentra un 404.}
+
+necesitamos que devuelva 404 si no encuentra
+
+ej. clase pasada retornabamos si habia o no un numero
+public ResponseEntity obtener(){}
+
+VER PARA QUE SIRVE LA CLASE BUILD
+responseEntity.ok().build()
+
+Response ENTITY Es clase GENERICA.
+
+ResponseEntity.ok(encontrada)
+	
+
+public ResponseEntity<Person> obtenerUna(@PathVariable int documento){
+Persona encontrada = personas.get(documento);
+if(encontradad !=null)
+ 	return ResponseEntity.ok(encontrada);
+else	
+	return ResponseEntity.notFound().build();
+}
+
+ENDPOINT PERMITE AGREGA PERSON
+
+
+@RequiestBody Persona nueva
+que el objeto person venga en el cuerpo
+
+raw(postMan)
+capaz de ciente
+
+https://www.youtube.com/watch?v=rf4ogZXvfTI
+
+CODIGOS DE RESPUESTA SERVIDOR
+1- Informativo
+2
+3
+4
+5
+
+
+aplication.properties
+
+server.error.include.message=ALWAYS
+
+File.lines().map para que nos cree una persona desde una linea
+
+
+TAREA
+PROX CLASE
+Hacer lo mismo que hicimos para el archivo de CODIGO POSTAL
+cuidado xq ahi no hay clave primaria.
+en vez de guardar datos en mapa
+hay que guardar en ArrayList de codigoPostal.
+Va a devolver coleccion de codigos
+
+*Hacer que pueda guardar
+
