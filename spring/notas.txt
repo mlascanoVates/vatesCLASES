@@ -20,4 +20,56 @@ END Points Necesarios:
 
 -> La direccion de los ENDSPOINT deben ser SUSTANTIVOS
 
+Con un navegador solo podemos hacer pedidos GET
+-Con Postman podemos hacer peticiones de todo tipo
+-Vemos que mandamos al servidor y ver que nos devuelve.
+
+Creamos conjunto de Peticiones  o Request que se van a agrupar en Colecciones (carpeta).
+ej.: ABM de números
+
+
+AGREGAR PARÁMETRO A METODO
+@PathVariable
+
+
+------
+Clase 16, CÓDIGOS DE ERROR
+CÓDIGOS DE RESPUESTA
+Que los ENDPOINT devuelva codigos en respuesta de lo que pase (200,404)
+
+Quiero consultar dato que está en la URI, si no está:
+404 - no encontrado
+100 - informativo
+200 - satisfactorios
+300 - rediccionamiento
+400 - errores de servidor
+
+**uso clase: RenponseEntity<List<>>
+Permite que el return devuelva
+Respuesta  + Código asociado
+
+Métodos de ResponserEntity
+ok()-> responde 200
+//genera una respuesta con código 200
+
+
+
+
+DIFERENCIA DE PUT vs POST
+//suele usarse como estrategia Put para modificar
+//Post para agregar
+
+
+//Si la clave es AutoNUMERICA
+tengo que diferencia Agregar y modificar
+POST agrego, PUT modificar
+
+//Cuando no es autonumérica, 
+se usa PUT de manera indistinta, si existe, pone o modifica.
+
+//El sentido lo decide el PROGRAMADOR
+//hay que DOCUMENTAR
+
+*** como por el momento no usamos Base de datos, sirve para ambos casos
+
 
