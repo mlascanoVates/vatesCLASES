@@ -53,3 +53,8 @@ TreeMap
 
 NOTAS:
 agregar menu sin usar la variable SWITCH
+
+
+
+PROMEDIO CON JAVA FUNCIONAL 
+AVERAGE.ORELSE

@@ -1,0 +1,90 @@
+cargar base
+ARMAR TODO EL ABM COMPLETO
+
+
+la clase anotada como spring esta en el mismo paquete, tiene que esta adentro, no al lado.
+
+
+PERSONA REPOSITORY, solo hace CRUD
+guardar
+consultar
+actualizar
+eliminar
+
+metodos:
+*
+*Puede ser la persona o un OPCIONAL de persona
+*Consultar coleccion de personas
+
+
+
+RECIBE UN OBJETO CONSULTADO EN LA CLASE
+
+@Service
+
+@Autowired
+private PersonasRepository repo;
+
+public PersonasService(){}
+
+@Respository
+class{
+@PersistenceContext
+private EntityManager em;
+
+@Transactional
+public void guardad(Persona p){
+em.persist(p)
+}
+
+
+public Persona consultar(int documento){
+return em.find(Persona.class, documento);}
+
+public Colection<Persona> consultarTodas(){
+return em.createQuery("select * from Persona p", Persona.class).getResultList();
+}
+
+@Transactional
+public void borrar(int)
+
+
+USAMOS 
+HIBERNATE
+
+
+USAR BASE DE DATOS EN CASA Y TRABAJO
+modificar contraseña en APLICATION PROPERTIES
+
+*Diferencia entre MERGE y PERSIST
+
+!!!!!
+PROMEDIO CON JAVA FUNCIONAL 
+AVERAGE.ORELSE
+//
+getSingleResoult
+
+
+JPQL
+java persistent ql
+
+cuando nos devuelven un OBJETO, que no tiene STRING
+
+
+**caso CADA VUELTA DEVUELVE UN VECTOR DE OBJETOS
+
+clase con mapas desde una lista de OBJETOS
+
+
+TRABAJAMOS CON "GROUP BY"
+
+falta trabajar con "WHERE"
+
+PAGINA A VER:
+ Consultas con JPA
+http://www.java2s.com/Tutorials/Java/JPA/4505__JPA_Query_AVG_Join_GroupBy.htm
+
+http://www.java2s.com/Tutorials/Java/JPA/4050__JPA_Query_Like.htm
+
+VAMOS A VER CONSULTA uno a muchos!
+VER LAS CONSULTA QUE NO INVOLUCREN MUCHAS TABLAS (una sola)

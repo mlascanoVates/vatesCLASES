@@ -1,0 +1,23 @@
+SPRING
+
+Cuando programamos API rest
+Programamos END-POINT
+VERBO + DIRECCIÓN
+
+
+********
+ABM de Numeros:
+*Sitio permita cargar números en alguna colección
+*Consultar numeros que se cargaron
+*Preguntar si un número existe o no
+
+->creamos un nuevo controlador	
+
+END Points Necesarios:
+*Consultar Numeros cargados
+*Consultar UNO
+*Agregar UNO
+
+-> La direccion de los ENDSPOINT deben ser SUSTANTIVOS
+
+

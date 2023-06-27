@@ -1,0 +1,23 @@
+si no le hcimos  null, nunca tenemos referencia a la instanacia del controlador
+
+clases Servicios se puede pensar en termino de base de datos
+Generalmente van a ser parecidos
+
+patron singleton.
+Personas hora 15.41hs mensiona el profe
+INSTALAR
+MYSQL Y dbeaver (version gratis)
+O - mysql o mariadb
+cleinte de base de datos relacionales
+
+Programar personas service. TAREA
+
+
+Si todos los ENDPOINT empienzan igual, podriamos establecer como un path , ruta., se accede de esta forma
+@RequestMapping("/personas/")
+
+
+clases YOUTUBE
+https://www.youtube.com/playlist?list=PL4irC4YYLZzJnJ8TUZUa5YSzJT64W8Fy-
+
+jpa API PARA ACCEDER A BASE DE DATOS CON JAVA

@@ -1,0 +1,7 @@
+
+organizar clase con composicion
+
+hacer con colecciones, no usar arreglos
+
+
+ver de usar metodo CONTAINS, VER QUE HACE, devuelve creo primero
