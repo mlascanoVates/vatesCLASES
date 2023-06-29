@@ -4,6 +4,7 @@ public class Telefono {
     private String numero; //es string xq es un numero largo, y a veces necesitamos agregar parentesis
     private String tipo; //movil,fijo descripción
 
+
     //Para usar requestBody, constructor sin parámetro
     public Telefono() {
     }
@@ -13,6 +14,19 @@ public class Telefono {
         this.tipo = tipo;
     }
 
+    public String getNumero() {
+        return numero;
+    }
 
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 }

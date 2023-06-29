@@ -2,11 +2,9 @@ package ar.com.vates.segundoPersonasABM.controladores;
 
 import ar.com.vates.segundoPersonasABM.entidades.Persona;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,8 +21,8 @@ public class PersonasController {
     }
 
     @GetMapping("/persona")
-    public Map<Integer, Persona> listarPersonas(){
-        return plantel;
+    public Collection<Persona> listarPersonas(){
+        return plantel.values();
     }
 
     @GetMapping("/persona/{dni}")
@@ -37,9 +35,11 @@ public class PersonasController {
 
     //DIFERENCIA DE PUT vs POST
     //guardar una persona en esta dirección
+    //si devuelve NULL es porque inserta una persona nva
+    //Necesitamos que lleguen al ENDPOINT todos los datos de la persona que se requiere guardar
     @PutMapping("/persona/{dni}")
-    public void agregarPersonas(@PathVariable int dni){
-
+    public ResponseEntity agregarPersonas(@PathVariable int dni, @RequestBody Persona p){
+        return ()
     }
 
 

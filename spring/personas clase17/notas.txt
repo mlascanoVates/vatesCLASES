@@ -1,0 +1,20 @@
+Clase 16
+Necesitamos que lleguen al ENDPOINT todos los datos de la persona que se requiere guardar
+
+Cuerpo de Pertición, viene en JSON
+a la uri le llega el DOCUMENTO, y luego le trae todo el JSON que se desee recibir
+Una Persona(clase) viene en el cuerpo de la peticion
+//Decimos que llega un objeto persona
+@RequestBody
+//Documento se carga de PathVariable
+@PathVariable
+
+*Guardamos la persona de forma definitiva con PUT
+*Agregamos clave DOCUMENTO son setDocumento
+*No agrega cuando está ocupado, o si no validan
+*O fuera de rango
+
+***
+CLASE 17, DEPENDENCIAS
+clase telefono que guarde más de un número
+   

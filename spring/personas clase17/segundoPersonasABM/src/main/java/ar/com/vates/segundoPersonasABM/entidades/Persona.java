@@ -9,6 +9,8 @@ public class Persona {
     String apellido;
     int edad;
 
+
+    //COMPOSICION
     private List<Telefono> listTelefonos;
 
     public Persona(){
@@ -16,12 +18,22 @@ public class Persona {
     }
 
     public Persona(int documento, String nombre, String apellido, int edad) {
-        this(); //Para llamar al constructor sin parámetros 
+        this(); //Para llamar al constructor sin parámetros, REUTILIZO
         this.documento = documento;
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
 
+    }
+
+    //Nunca hacemos set de telefonos, solo Get para consultar
+    public List<Telefono> getListTelefonos() {
+        return listTelefonos;
+    }
+
+    //en vez de SET un método agregarTeléfono
+    public void agregarTelefono(Telefono tel){
+        listTelefonos.add(tel);
     }
 
     public int getDocumento() {
