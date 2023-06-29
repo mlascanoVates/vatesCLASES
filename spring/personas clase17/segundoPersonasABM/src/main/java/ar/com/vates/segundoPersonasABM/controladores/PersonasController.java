@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,9 +39,8 @@ public class PersonasController {
     //DIFERENCIA DE PUT vs POST
     //guardar una persona en esta dirección
     @PutMapping("/persona/{dni}")
-    public void agregarPersonas(@PathVariable int dni){
-
-    }
+    public ResponseEntity agregarPersonas(@PathVariable int dni, @PathVariable Persona p ){
+     return (plantel.put(dni, p))==null ? ResponseEntity.created(URI.create(String.format("persona/%d", dni))).build():     }
 
 
 

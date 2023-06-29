@@ -73,3 +73,66 @@ se usa PUT de manera indistinta, si existe, pone o modifica.
 *** como por el momento no usamos Base de datos, sirve para ambos casos
 
 
+NOTACION JSON
+"4345": {
+        "documento": 4345,
+        "nombre": "Luis",
+        "apellido": "Ledesma",
+        "edad": 40
+    }
+
+object Notation
+Vector con un objeto
+(varias llaves, varios objetos)
+
+
+***
+Clase 17
+Planteo: de cada persona vamos a tener más de un Teléfono
+
+****
+ultima clase
+VER RELACIONES
+MODELO Relacional No permite Mucho a Muchos
+se desarma y permite uno a mucho de cada lado.
+
+
+COMO HACER RELACIONES UNO A MUCHOS
+
+***
+
+Puede ocurrir que una tabla intermedia tenga solo clave foránea.
+COMPOSICION DE CLASES
+
+ASOCIATION CLASS
+EJ:
+Estudiante - Curso (Inscripcion)
+
+Del lado del 1, Tenemos un atributo colección de objetos.
+ej: libro tiene muchos prástamos
+
+JPA permite marcar las clases
+Del 1: OneToMany
+Del muchos: ManyToONe
+
+
+LISTA DE PRESTAMOS: OneToMany
+tenemos que indicar cual es el atrito  que vincula
+*Del otro lado: ManyToone
+
+
+TABLA PERSONA
+
+TABLA TELEFONO
+id  int11 (autoincrement)  PRI
+documento int11 MUL
+numero varchar 20
+tipo int 11 NULL
+
+***
+librería SPRINGDATA
+permite crear Reposiroty sin programarlos
+
+Tiene progrmada todas las operaciones CRUD
+
+JPA REPOSITORY QUERY METHODS
